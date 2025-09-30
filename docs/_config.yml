@@ -26,5 +26,4 @@ permalink: /:title.html   # ensures reactive-programming.md -> reactive-programm
 # Optional: Enable syntax highlighting for code blocks
 # Example usage in markdown: ```ruby ... ```
 
-github: "https://github.com/ramnull"
 linkedin: "https://www.linkedin.com/in/sriram-nallas"
