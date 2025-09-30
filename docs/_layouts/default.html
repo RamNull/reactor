@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
-    <!-- Optional: Font Awesome for icons -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
@@ -23,8 +23,8 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
       <div class="header-buttons">
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="btn"><i class="fab fa-github"></i> GitHub</a>
+        {% if site.github.repository_url %}
+          <a href="{{ site.github.repository_url }}" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         {% endif %}
         {% if site.linkedin %}
           <a href="{{ site.linkedin }}" class="btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -41,7 +41,7 @@
 
       <footer class="site-footer">
         <div class="social-links">
-          {% if site.github.is_project_page %}
+          {% if site.github.repository_url %}
             <a href="{{ site.github.repository_url }}" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           {% endif %}
           {% if site.linkedin %}
@@ -49,7 +49,7 @@
           {% endif %}
         </div>
 
-        {% if site.github.is_project_page %}
+        {% if site.github.repository_url %}
           <span class="site-footer-owner">
             <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
           </span>
