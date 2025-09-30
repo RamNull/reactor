@@ -22,13 +22,13 @@
 
         In the below code snippet the response is both async and non-blocking when we execute the below code the main thread doesn't wait till response comes it just goes to the next statement i.e., "Request sent!" at the same time its non-blocking as it doesn't block any thread 
 
-```java
-Mono<String> response = webClient.get().uri("/data").retrieve().bodyToMono(String.class);
+        ```java
+        Mono<String> response = webClient.get().uri("/data").retrieve().bodyToMono(String.class);
 
-// The program continues without waiting for response
-System.out.println("Request sent!");
-response.subscribe(); // Result printed later
-```
+        // The program continues without waiting for response
+        System.out.println("Request sent!");
+        response.subscribe(); // Result printed later
+        ```
 
 ## Problem
 
@@ -55,7 +55,7 @@ on top of that this much of computational power is only needed during the peak h
 
 ---
 
-Similarly in Reactive Programming when a request comes to product service and when product service needs to make a call to review service the physical thread (waiter) will take the request and update the chef (review service) and the physical thread will cater to other needs once the review service responds with the data the OS notifies thread that the response is ready and if the thread is free it will pick up the response and process it or else it will complete its existing tasks and pick this task 
+    Similarly in Reactive Programming when a request comes to product service and when product service needs to make a call to review service the physical thread (waiter) will take the request and update the chef (review service) and the physical thread will cater to other needs once the review service responds with the data the OS notifies thread that the response is ready and if the thread is free it will pick up the response and process it or else it will complete its existing tasks and pick this task 
 
 
 
@@ -91,34 +91,34 @@ we will discuss how reactive programming works using the Reactor Library but Bef
 
     ```
 
-### 3. ChannelHandler
-Channel handler are used to process the data the channel handlers are 2 types 
+    - ### 3. ChannelHandler
+        Channel handler are used to process the data the channel handlers are 2 types 
 
----
-#### 3.1 inbound Handler
-inbound handlers process handle the incoming data events from the socket to the thread
-#### 3.2 outbound Handler
-outbound handler process handle the outgoing data events from the thread to the socket
+        ---
+        - #### 3.1 inbound Handler
+        inbound handlers process handle the incoming data events from the socket to the thread
+        - #### 3.2 outbound Handler
+        outbound handler process handle the outgoing data events from the thread to the socket
 
----
-a handler can be both inbound and outbound in such scenarios both incoming and outgoing data flows through the handler 
+        ---
+        a handler can be both inbound and outbound in such scenarios both incoming and outgoing data flows through the handler 
 
-in below code 
+        in below code 
 
-when there is an incoming event the event flows from.  
-Inbound: from socket → pipeline → application
+        when there is an incoming event the event flows from.  
+        Inbound: from socket → pipeline → application
 
-when there is an outgoing event the event from from application to socket.  
-Outbound: from application → pipeline → socket
+        when there is an outgoing event the event from from application to socket.  
+        Outbound: from application → pipeline → socket
 
-```java
+        ```java
 
-channel.pipeline()
-       .addLast(new StringDecoder()) // inbound handler
-       .addLast(new BusinessLogicHandler()) // inbound outbound handler
-       .addLast(new StringEncoder()); // outbound handler
+        channel.pipeline()
+            .addLast(new StringDecoder()) // inbound handler
+            .addLast(new BusinessLogicHandler()) // inbound outbound handler
+            .addLast(new StringEncoder()); // outbound handler
 
-```
+        ```
 
 ### 4. EventLoop 
 Event loop is a dedicated thread that does non-blocking I/O operations for one or more channels.
