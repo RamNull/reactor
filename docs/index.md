@@ -2,19 +2,19 @@
 
 **Reactive Programming** is a programming paradigm which does async, non-blocking, event driven execution. In Reactive programming we react to data when it arrives, instead of waiting for the data to arrive. Reactive programming is extensively used for I/O operations.
 
-## 1. Asynchronous 
+- ## 1. Asynchronous 
 
-Reactive Programming is asynchronous in nature i.e., it doesn't block the thread till it receives response, instead it registers for callbacks or listeners and continue with other works 
+    Reactive Programming is asynchronous in nature i.e., it doesn't block the thread till it receives response, instead it registers for callbacks or listeners and continue with other works 
 
-## 2. Non-Blocking
+- ## 2. Non-Blocking
 
-The I/O calls are non blocking in nature.
+    The I/O calls are non blocking in nature.
 
-eg: In a normal DB call the thread is blocked till we get the response back, but in reactive programming the thread  triggers a DB call and do other works and only reacts when there is a response.
+    eg: In a normal DB call the thread is blocked till we get the response back, but in reactive programming the thread  triggers a DB call and do other works and only reacts when there is a response.
 
-## 3. Event Driven
+- ## 3. Event Driven
 
-Reactive programming system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
+    Reactive programming system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
 
 ---
 
@@ -78,6 +78,7 @@ Channel is an abstraction on top of socket, that allows asynchronous I/O read an
 - channel
 - Operations works with (READ,WRITE,ACCEPT,CONNECT)
 - optional Data
+
 ### 2. ChannelPipeline
 Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
 
