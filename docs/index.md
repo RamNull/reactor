@@ -120,87 +120,87 @@ we will discuss how reactive programming works using the Reactor Library but Bef
 
         ```
 
-### 4. EventLoop 
-Event loop is a dedicated thread that does non-blocking I/O operations for one or more channels.
-### 5. EventLoopGroup
-EventLoop Group as the name suggests is a group of event loops. There are 2 types event loops group 
+    - ### 4. EventLoop 
+    Event loop is a dedicated thread that does non-blocking I/O operations for one or more channels.
+    - ### 5. EventLoopGroup
+        EventLoop Group as the name suggests is a group of event loops. There are 2 types event loops group 
 
-#### 5.1 Boss Group 
-Boss event group is used to handel incoming connections and register them with the worker groups 
-#### 5.2 Worker Group
-Worker groups read and write the events from and to the channels 
+        - #### 5.1 Boss Group 
+            Boss event group is used to handel incoming connections and register them with the worker groups 
+        - #### 5.2 Worker Group
+            Worker groups read and write the events from and to the channels 
 
-### 6. Selector
-Selector is java NIO(new I/O) that monitor the sockets and notifies the Event loop about the events 
+    - ### 6. Selector
+        Selector is java NIO(new I/O) that monitor the sockets and notifies the Event loop about the events 
 
-The below is snippet is Selector code that monitors the events and notifies the event loop.  
+        The below is snippet is Selector code that monitors the events and notifies the event loop.  
 
-the code below we are setting the channel as server channels ch1 and ch2 that are non blocking and the server channels are registered with a selector saying that it only works with read and accept type operations which reads the incoming data and accepts new connections.  
+        the code below we are setting the channel as server channels ch1 and ch2 that are non blocking and the server channels are registered with a selector saying that it only works with read and accept type operations which reads the incoming data and accepts new connections.  
 
-Multiple channels can be registered to one selector so relation ship b/w channel and selector is many to one 
+        Multiple channels can be registered to one selector so relation ship b/w channel and selector is many to one 
 
-selector.select() blocks the java NIO until an Accept type operation occurs the 
-selector.select() code internally monitors the events with the help of epoll now when there are events from channels it takes all the events and iterates them depending on the key type it does required operations 
+        selector.select() blocks the java NIO until an Accept type operation occurs the 
+        selector.select() code internally monitors the events with the help of epoll now when there are events from channels it takes all the events and iterates them depending on the key type it does required operations 
 
-```java
+    ```java
 
-Selector selector = Selector.open();
-SocketChannel ch1 = SocketChannel.open();
-SocketChannel ch2 = SocketChannel.open();
-ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
-ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
+    Selector selector = Selector.open();
+    SocketChannel ch1 = SocketChannel.open();
+    SocketChannel ch2 = SocketChannel.open();
+    ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
+    ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
 
-while (true) {
-    selector.select(); // blocks until an event occurs
-    Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
-    for (SelectionKey key : selectedKeys) {
-        if (key.isAcceptable()) {
-            // handle new connection
-        } else if (key.isReadable()) {
-            // handle incoming data
+    while (true) {
+        selector.select(); // blocks until an event occurs
+        Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
+        for (SelectionKey key : selectedKeys) {
+            if (key.isAcceptable()) {
+                // handle new connection
+            } else if (key.isReadable()) {
+                // handle incoming data
+            }
         }
+        selectedKeys.clear();
     }
-    selectedKeys.clear();
-}
 
 
-```
+    ```
 
----
+    ---
 
-OS Components that you need to be aware of 
+    OS Components that you need to be aware of 
 
-### 1. socket
-Socket is endpoint that sends the receives data 
-### 2. epoll
-epoll is the linux system kernel call that monitors the sockets. this might look awfully similar to selector, thats because the selector NIO is implemented using epoll in linux there are similar commands in other Operating Systems that monitor the socket like 
-IOCP in windows 
+    - ### 1. socket
+    Socket is endpoint that sends the receives data 
+    - ### 2. epoll
+    epoll is the linux system kernel call that monitors the sockets. this might look awfully similar to selector, thats because the selector NIO is implemented using epoll in linux there are similar commands in other Operating Systems that monitor the socket like 
+    IOCP in windows 
 
-in below code snippet we have the selector code and the equivalent epoll code 
-at the end epoll_wait blocks the event loop until one or more channels (file descriptor) are ready
+    in below code snippet we have the selector code and the equivalent epoll code 
+    at the end epoll_wait blocks the event loop until one or more channels (file descriptor) are ready
 
-```java
+    ```java
 
-// when selector is created it internally creates an epoll instance 
-Selector selector = Selector.open();
-// above code internally runs 
-epfd = epoll_create();
+    // when selector is created it internally creates an epoll instance 
+    Selector selector = Selector.open();
+    // above code internally runs 
+    epfd = epoll_create();
 
-// when to call the channel register 
-channel.register(selector, ops)
-//internally it runs 
-epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &event);
+    // when to call the channel register 
+    channel.register(selector, ops)
+    //internally it runs 
+    epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &event);
 
-// when the selector is waiting for events 
-selector.select()
-// internally it runs 
-epoll_wait(epfd, events, maxEvents, timeout);
-
-
-```
+    // when the selector is waiting for events 
+    selector.select()
+    // internally it runs 
+    epoll_wait(epfd, events, maxEvents, timeout);
 
 
-### Reactive Programming work flow 
+    ```
+
+
+## Reactive Programming work flow 
 
 Lets take the example of the latest 100 reviews problem here and try to explain the reactive workflow.   
 
@@ -223,7 +223,7 @@ clientChannel.register(selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE);
 
 ```
 
-#### Registration flow 
+## Registration flow 
 
 Client Channel when registered the selection key is registered to the event loop and each event loop will have a selector and a selector have a epoll instance so many channels can be registered to one event loop i.e., once selector i.e., once epoll instance 
 
@@ -242,13 +242,13 @@ now once the channel socket  made writable epoll_wait returns selection key then
 
 Now we wait for the data, till the socket has response event. Once the response comes back  the socket is made readable, and the event loop is notified by epoll_wait returns. Now the event loop is unblocked which process the data and returns the data which will again needs to be written as response to the socket now the socket is made writable and the data is written to the channel 
 
-### FYI
+## FYI
 
 In general the selectors are registered only with OP_READ as OP_WRITE is expensive. if the OP_wRITE is Registered then the event loop always tries to write to the socket even when there is nothing to write 
 
 So when application have outbound data the it registers the socket with OP_WRITE and once the event is published OP_WRITE is unregistered.  
 
-### Mappings 
+## Mappings 
 
 In the Restaurants analogy 
 
