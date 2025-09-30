@@ -1,0 +1,26 @@
+# /docs/_config.yml
+
+# Site settings
+title: "Reactor Tutorial"
+description: "Documentation for Reactive Programming"
+url: "https://ramnull.github.io"  # your GitHub Pages URL
+# baseurl: "/reactor"   # DO NOT set baseurl, GitHub automatically handles repo name
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+# Theme
+theme: minima   # You can change to another theme if you like
+
+# Include and exclude
+include: ["*.md"]
+exclude: ["README.md"]
+
+# Permalinks
+permalink: /:title.html   # ensures reactive-programming.md -> reactive-programming.html
+
+# Optional: Enable syntax highlighting for code blocks
+# Example usage in markdown: ```ruby ... ```
