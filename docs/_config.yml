@@ -2,7 +2,7 @@
 
 # Site settings
 title: "Reactor Tutorial"
-description: "Documentation for Reactive Programming"
+description: "In-depth dissection of Reactive Programming Internal Working"
 url: "https://ramnull.github.io"  # your GitHub Pages URL
 # baseurl: "/reactor"   # DO NOT set baseurl, GitHub automatically handles repo name
 
