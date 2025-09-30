@@ -2,27 +2,25 @@
 
 **Reactive Programming** is a programming paradigm which does async, non-blocking, event driven execution. In Reactive programming we react to data when it arrives, instead of waiting for the data to arrive. Reactive programming is extensively used for I/O operations.
 
-- ## 1. Asynchronous 
+- ### 1. Asynchronous 
 
     Reactive Programming is asynchronous in nature i.e., it doesn't block the thread till it receives response, instead it registers for callbacks or listeners and continue with other works 
 
-- ## 2. Non-Blocking
+- ### 2. Non-Blocking
 
     The I/O calls are non blocking in nature.
 
     eg: In a normal DB call the thread is blocked till we get the response back, but in reactive programming the thread  triggers a DB call and do other works and only reacts when there is a response.
 
-- ## 3. Event Driven
+- ### 3. Event Driven
 
     Reactive programming system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
 
----
+    Even though asynchronous are non-blocking looks kind of the same they are not. Asynchronous makes sure that the main thread is not waiting for the response but there will be other threads that are working in the background. where are non-blocking I/O doesn't block the thread itself
 
-Even though asynchronous are non-blocking looks kind of the same they are not. Asynchronous makes sure that the main thread is not waiting for the response but there will be other threads that are working in the background. where are non-blocking I/O doesn't block the thread itself
+    - ### Example 
 
-### Example 
-
-In the below code snippet the response is both async and non-blocking when we execute the below code the main thread doesn't wait till response comes it just goes to the next statement i.e., "Request sent!" at the same time its non-blocking as it doesn't block any thread 
+        In the below code snippet the response is both async and non-blocking when we execute the below code the main thread doesn't wait till response comes it just goes to the next statement i.e., "Request sent!" at the same time its non-blocking as it doesn't block any thread 
 
 ```java
 Mono<String> response = webClient.get().uri("/data").retrieve().bodyToMono(String.class);
