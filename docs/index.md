@@ -42,16 +42,16 @@ on top of that this much of computational power is only needed during the peak h
 
 ## solution
 
-### Real-Life Analogy
+- ### Real-Life Analogy
 
-Imagine you went to a Restaurant and sat at table no : 5. The above solution is like the waiter takes the order and updates the chef to prepare the order and wait at the service counter till the chef completes the order and brings the order back 
+    Imagine you went to a Restaurant and sat at table no : 5. The above solution is like the waiter takes the order and updates the chef to prepare the order and wait at the service counter till the chef completes the order and brings the order back 
 
-this is highly inefficient instead the waiter can do this 
-- takes the order 
-- updated the chef regarding the order 
-- goes to the next table either to serve the prepared order or take a new order from a different table
-- chef completes the preparation and informs the waiter that table no : 5 order is ready 
-- if waiter is free he will pickup the order immediately or completes the tasks in his queue and then picks the order 
+    this is highly inefficient instead the waiter can do this 
+    - takes the order 
+    - updated the chef regarding the order 
+    - goes to the next table either to serve the prepared order or take a new order from a different table
+    - chef completes the preparation and informs the waiter that table no : 5 order is ready 
+    - if waiter is free he will pickup the order immediately or completes the tasks in his queue and then picks the order 
 
 ---
 
@@ -64,32 +64,32 @@ Similarly in Reactive Programming when a request comes to product service and wh
 
 we will discuss how reactive programming works using the Reactor Library but Before understanding how reactive programming works. we need to understand about netty how it handles requests coming into the system as netty is the core for reactive programming 
 
-## Netty
+- ## Netty
 
-Netty is a networking framework written in Java that is event driven, non-blocking and asynchronous. It abstracts the network programming like dealing with socket and selector. 
-it internally uses java NIO to run threads without blocking them 
+    Netty is a networking framework written in Java that is event driven, non-blocking and asynchronous. It abstracts the network programming like dealing with socket and selector. 
+    it internally uses java NIO to run threads without blocking them 
 
-The key Components of Netty are 
+    The key Components of Netty are 
 
-### 1. Channel
-Channel is an abstraction on top of socket, that allows asynchronous I/O read and write. Each channel has Selection key a unique identifier to identify the channel this contains the details like 
-- channel
-- Operations works with (READ,WRITE,ACCEPT,CONNECT)
-- optional Data
+    - ### 1. Channel
+        Channel is an abstraction on top of socket, that allows asynchronous I/O read and write. Each channel has Selection key a unique identifier to identify the channel this contains the details like 
+        - channel
+        - Operations works with (READ,WRITE,ACCEPT,CONNECT)
+        - optional Data
 
-### 2. ChannelPipeline
-Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
+    - ### 2. ChannelPipeline
+        Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
 
-```java
+    ```java
 
 
-channel.pipeline()
-       .addLast(new LoggingHandler()) // inbound handler
-       .addLast(new StringDecoder()) // inbound handler
-       .addLast(new BusinessLogicHandler()) // inbound outbound handler
-       .addLast(new StringEncoder()); // outbound handler
+    channel.pipeline()
+        .addLast(new LoggingHandler()) // inbound handler
+        .addLast(new StringDecoder()) // inbound handler
+        .addLast(new BusinessLogicHandler()) // inbound outbound handler
+        .addLast(new StringEncoder()); // outbound handler
 
-```
+    ```
 
 ### 3. ChannelHandler
 Channel handler are used to process the data the channel handlers are 2 types 
