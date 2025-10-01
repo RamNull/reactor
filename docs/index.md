@@ -80,16 +80,16 @@ we will discuss how reactive programming works using the Reactor Library but Bef
     - ### 2. ChannelPipeline
         Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
 
-    ```java
+        ```java
 
 
-    channel.pipeline()
-        .addLast(new LoggingHandler()) // inbound handler
-        .addLast(new StringDecoder()) // inbound handler
-        .addLast(new BusinessLogicHandler()) // inbound outbound handler
-        .addLast(new StringEncoder()); // outbound handler
+        channel.pipeline()
+            .addLast(new LoggingHandler()) // inbound handler
+            .addLast(new StringDecoder()) // inbound handler
+            .addLast(new BusinessLogicHandler()) // inbound outbound handler
+            .addLast(new StringEncoder()); // outbound handler
 
-    ```
+        ```
 
     - ### 3. ChannelHandler
         Channel handler are used to process the data the channel handlers are 2 types 
@@ -142,29 +142,29 @@ we will discuss how reactive programming works using the Reactor Library but Bef
         selector.select() blocks the java NIO until an Accept type operation occurs the 
         selector.select() code internally monitors the events with the help of epoll now when there are events from channels it takes all the events and iterates them depending on the key type it does required operations 
 
-    ```java
+        ```java
 
-    Selector selector = Selector.open();
-    SocketChannel ch1 = SocketChannel.open();
-    SocketChannel ch2 = SocketChannel.open();
-    ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
-    ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
+        Selector selector = Selector.open();
+        SocketChannel ch1 = SocketChannel.open();
+        SocketChannel ch2 = SocketChannel.open();
+        ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
+        ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
 
-    while (true) {
-        selector.select(); // blocks until an event occurs
-        Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
-        for (SelectionKey key : selectedKeys) {
-            if (key.isAcceptable()) {
-                // handle new connection
-            } else if (key.isReadable()) {
-                // handle incoming data
+        while (true) {
+            selector.select(); // blocks until an event occurs
+            Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
+            for (SelectionKey key : selectedKeys) {
+                if (key.isAcceptable()) {
+                    // handle new connection
+                } else if (key.isReadable()) {
+                    // handle incoming data
+                }
             }
+            selectedKeys.clear();
         }
-        selectedKeys.clear();
-    }
 
 
-    ```
+        ```
 
     ---
 
@@ -179,25 +179,25 @@ we will discuss how reactive programming works using the Reactor Library but Bef
     in below code snippet we have the selector code and the equivalent epoll code 
     at the end epoll_wait blocks the event loop until one or more channels (file descriptor) are ready
 
-    ```java
+        ```java
 
-    // when selector is created it internally creates an epoll instance 
-    Selector selector = Selector.open();
-    // above code internally runs 
-    epfd = epoll_create();
+        // when selector is created it internally creates an epoll instance 
+        Selector selector = Selector.open();
+        // above code internally runs 
+        epfd = epoll_create();
 
-    // when to call the channel register 
-    channel.register(selector, ops)
-    //internally it runs 
-    epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &event);
+        // when to call the channel register 
+        channel.register(selector, ops)
+        //internally it runs 
+        epoll_ctl(epfd, EPOLL_CTL_ADD, fd, &event);
 
-    // when the selector is waiting for events 
-    selector.select()
-    // internally it runs 
-    epoll_wait(epfd, events, maxEvents, timeout);
+        // when the selector is waiting for events 
+        selector.select()
+        // internally it runs 
+        epoll_wait(epfd, events, maxEvents, timeout);
 
 
-    ```
+        ```
 
 
 ## Reactive Programming work flow 
