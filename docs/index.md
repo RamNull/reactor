@@ -80,16 +80,16 @@ we will discuss how reactive programming works using the Reactor Library but Bef
     - ### 2. ChannelPipeline
         Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
 
-        ```java
+            ```java
 
 
-        channel.pipeline()
-            .addLast(new LoggingHandler()) // inbound handler
-            .addLast(new StringDecoder()) // inbound handler
-            .addLast(new BusinessLogicHandler()) // inbound outbound handler
-            .addLast(new StringEncoder()); // outbound handler
+            channel.pipeline()
+                .addLast(new LoggingHandler()) // inbound handler
+                .addLast(new StringDecoder()) // inbound handler
+                .addLast(new BusinessLogicHandler()) // inbound outbound handler
+                .addLast(new StringEncoder()); // outbound handler
 
-        ```
+            ```
 
     - ### 3. ChannelHandler
         Channel handler are used to process the data the channel handlers are 2 types 
@@ -142,42 +142,41 @@ we will discuss how reactive programming works using the Reactor Library but Bef
         selector.select() blocks the java NIO until an Accept type operation occurs the 
         selector.select() code internally monitors the events with the help of epoll now when there are events from channels it takes all the events and iterates them depending on the key type it does required operations 
 
-        ```java
+            ```java
 
-        Selector selector = Selector.open();
-        SocketChannel ch1 = SocketChannel.open();
-        SocketChannel ch2 = SocketChannel.open();
-        ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
-        ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
+            Selector selector = Selector.open();
+            SocketChannel ch1 = SocketChannel.open();
+            SocketChannel ch2 = SocketChannel.open();
+            ch1.configureBlocking(false).register(selector, SelectionKey.OP_READ);
+            ch2.configureBlocking(false).register(selector, SelectionKey.OP_ACCEPT);
 
-        while (true) {
-            selector.select(); // blocks until an event occurs
-            Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
-            for (SelectionKey key : selectedKeys) {
-                if (key.isAcceptable()) {
-                    // handle new connection
-                } else if (key.isReadable()) {
-                    // handle incoming data
+            while (true) {
+                selector.select(); // blocks until an event occurs
+                Set<SelectionKey> selectedKeys = selector.selectedKeys(); // there can be multiple channels that send events at the same time 
+                for (SelectionKey key : selectedKeys) {
+                    if (key.isAcceptable()) {
+                        // handle new connection
+                    } else if (key.isReadable()) {
+                        // handle incoming data
+                    }
                 }
+                selectedKeys.clear();
             }
-            selectedKeys.clear();
-        }
 
 
-        ```
+            ```
 
     ---
 
     OS Components that you need to be aware of 
 
     - ### 1. socket
-    Socket is endpoint that sends the receives data 
+        Socket is endpoint that sends the receives data 
     - ### 2. epoll
-    epoll is the linux system kernel call that monitors the sockets. this might look awfully similar to selector, thats because the selector NIO is implemented using epoll in linux there are similar commands in other Operating Systems that monitor the socket like 
-    IOCP in windows 
+        epoll is the linux system kernel call that monitors the sockets. this might look awfully similar to selector, thats because the selector NIO is implemented using epoll in linux there are similar commands in other Operating Systems that monitor the socket like IOCP in windows 
 
-    in below code snippet we have the selector code and the equivalent epoll code 
-    at the end epoll_wait blocks the event loop until one or more channels (file descriptor) are ready
+        in below code snippet we have the selector code and the equivalent epoll code 
+        at the end epoll_wait blocks the event loop until one or more channels (file descriptor) are ready
 
         ```java
 
