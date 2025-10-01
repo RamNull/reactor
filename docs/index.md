@@ -54,7 +54,6 @@ on top of that this much of computational power is only needed during the peak h
     - if waiter is free he will pickup the order immediately or completes the tasks in his queue and then picks the order 
 
 ---
-
     Similarly in Reactive Programming when a request comes to product service and when product service needs to make a call to review service the physical thread (waiter) will take the request and update the chef (review service) and the physical thread will cater to other needs once the review service responds with the data the OS notifies thread that the response is ready and if the thread is free it will pick up the response and process it or else it will complete its existing tasks and pick this task 
 
 
