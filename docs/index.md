@@ -1,6 +1,6 @@
 # Reactive Programming 
 
-**Reactive Programming** is a programming paradigm which does async, non-blocking, event driven execution. In Reactive programming we react to data when it arrives, instead of waiting for the data to arrive. Reactive programming is extensively used for I/O operations.
+**Reactive Programming** is a programming paradigm which does async, non-blocking, event driven execution. In Reactive programming we react to data when it arrives, instead of waiting for the response. Reactive programming is extensively used for I/O operations.
 
 - ### 1. Asynchronous 
 
@@ -14,9 +14,9 @@
 
 - ### 3. Event Driven
 
-    Reactive programming system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
+    Reactive system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
 
-    Even though asynchronous are non-blocking looks kind of the same they are not. Asynchronous makes sure that the main thread is not waiting for the response but there will be other threads that are working in the background. where are non-blocking I/O doesn't block the thread itself
+    Even though asynchronous and non-blocking looks kind of the same they are not. Asynchronous makes sure that the main thread is not waiting for the response but there will be other threads that are working in the background. where as non-blocking I/O doesn't block the thread once an I/O call is made the thread works with other requests
 
     - ### Example 
 
