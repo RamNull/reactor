@@ -262,11 +262,101 @@ In the Restaurants analogy
 | **Ready Bell** | **epoll / Selector Notification** | Notifies the EventLoop that data is ready to read or write. |
 | **Host / Receptionist** | **Boss EventLoopGroup** | Accepts incoming requests and assigns them to available EventLoops (waiters). |
 
+- ## Publisher-Subscriber Model
+
+    Lets come to actual usage of the Reactive Programming. For implementation of reactive programming we have different libraries like RXjava or Reactor we will be working with reactor library.Reactor is a library that follows publisher-subscriber model.  
+    
+    In publisher subscriber model there will be a publisher that publishes the message and  to a central broad cast and the subscriber who registers with the broker, receives the message.
 
 
-## Publisher-Subscriber pattern
+    - ### 1. Publisher 
+        Publisher  publishes the event to the broker but in Reactor there is no separate broker the publisher it self acts as broker the publisher it self handles the flow of data. there are 2 type of publishers Flux and mono 
 
-### Real-Life Analogy
+        - ### Flux 
+            Flux is the standard publisher that emits 0 or more items  
+
+            ![Alt text](images/mono.svg)
+
+            in the below code snippet the flux takes stream of 3 items.
+
+            ```java
+            Flux<String> flux = Flux.just("Apple", "Banana", "Cherry");
+            ```
+
+        - ### Mono 
+            Mono is the standard publisher that emits 0 or 1 items 
+
+            ![Alt text](images/flux.svg)
+
+            in the below code snippet mono takes stream of 1 item  "Hello Mono"
+
+            ```java
+            Mono<String> mono = Mono.just("Hello Mono");
+            ```
+
+        Flux and Mono both have 3 types of events (more of method calls ) onNext() , onComplete() , onError() both onComplete and onError are used for used for terminating the stream on success and failure scenarios respectively. where as onNext gives the next element and can be iterated till items in the stream are exhausted. in mono its expected that onNext is immediately followed by onComplete or mono emits a single onError.    
+        
+        A publisher can Publish event stream in 2 ways Hot publish and cold publish 
+
+
+        - ### Hot Publish 
+            Hot publish emits data independent of subscribers. Subscribers may miss events if they don't subscribe from the beginning 
+
+            its more like streaming live match you will see from when you started from watching but not form start 
+
+            ```java
+
+            Flux<Long> hotFlux = Flux.interval(Duration.ofMillis(500)) // emits every 500ms
+                                  .publish()  // converts to ConnectableFlux (hot)
+                                  .autoConnect(); // starts emitting immediately
+
+            ```
+
+        - ### Cold Publish 
+            Cold publish start emitting data only after the subscribe() initiates the pipeline 
+
+            its more like watching a movie you can start watching from the start 
+
+            ```java
+
+            Flux<Integer> coldFlux = Flux.range(1, 5); // cold publisher
+
+            System.out.println("Subscriber 1 subscribes:");
+            coldFlux.subscribe(i -> System.out.println("Subscriber 1 received: " + i));
+
+            ```
+
+    - ### 2. Subscriber
+        Subscriber is the one who registers for receiving messages . reactor has only one type of subscriber .subscribe(). for cold publishing .subscribe() triggers the data flow. There are 5 variants of subscribe() method
+
+        ```java
+        
+        // Just Subscription and trigger 
+        subscribe();
+        
+        // do something with each item 
+        subscribe(Consumer<? super T> consumer);
+        
+        // deals with values and react to error 
+        subscribe(Consumer<? super T> consumer,
+          Consumer<? super Throwable> errorConsumer);
+          
+          
+        subscribe(Consumer<? super T> consumer,
+          Consumer<? super Throwable> errorConsumer,
+          Runnable completeConsumer);
+          
+        subscribe(Consumer<? super T> consumer,
+          Consumer<? super Throwable> errorConsumer,
+          Runnable completeConsumer,
+          Consumer<? super Subscription> subscriptionConsumer);
+
+        ```
+
+
+
+
+
 
 
 
