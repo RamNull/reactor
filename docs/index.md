@@ -142,7 +142,7 @@ we will discuss how reactive programming works using the Reactor Library but Bef
         selector.select() blocks the java NIO until an Accept type operation occurs the 
         selector.select() code internally monitors the events with the help of epoll now when there are events from channels it takes all the events and iterates them depending on the key type it does required operations 
 
-            ```java
+        ```java
 
             Selector selector = Selector.open();
             SocketChannel ch1 = SocketChannel.open();
@@ -164,7 +164,7 @@ we will discuss how reactive programming works using the Reactor Library but Bef
             }
 
 
-            ```
+        ```
 
     ---
 
@@ -260,7 +260,9 @@ In the Restaurants analogy
 | **Chef** | **Physical Thread / Worker Thread** | Executes the actual CPU-bound work; can cook multiple dishes requested by different waiters. |
 | **Cooking Pans** | **Socket** | Only one item can be cooked at a time; similarly, one request flows through a socket at a time. |
 | **Ready Bell** | **epoll / Selector Notification** | Notifies the EventLoop that data is ready to read or write. |
-| **Host / Receptionist** | **Boss EventLoopGroup** | Accepts incoming requests and assigns them to available EventLoops (waiters). |
+| **Host / Receptionist** | **Boss EventLoopGroup** | Accepts incoming requests and assigns them to available EventLoops (waiters). |  
+
+---
 
 - ## Publisher-Subscriber Model
 
@@ -341,7 +343,7 @@ In the Restaurants analogy
         subscribe(Consumer<? super T> consumer,
           Consumer<? super Throwable> errorConsumer);
           
-          
+
         subscribe(Consumer<? super T> consumer,
           Consumer<? super Throwable> errorConsumer,
           Runnable completeConsumer);
