@@ -80,7 +80,7 @@ we will discuss how reactive programming works using the Reactor Library but Bef
     - ### 2. ChannelPipeline
         Channel pipeline is like a sophisticated chain of responsibility implementation. when you get the response from the channel and goes through the channel pipeline which contains the channelHandlers which can process the data 
 
-            ```java
+        ```java
 
 
             channel.pipeline()
@@ -89,7 +89,7 @@ we will discuss how reactive programming works using the Reactor Library but Bef
                 .addLast(new BusinessLogicHandler()) // inbound outbound handler
                 .addLast(new StringEncoder()); // outbound handler
 
-            ```
+        ```
 
     - ### 3. ChannelHandler
         Channel handler are used to process the data the channel handlers are 2 types 
