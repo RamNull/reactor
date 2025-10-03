@@ -2,17 +2,17 @@
 
 **Reactive Programming** is a programming paradigm which does async, non-blocking, event driven execution. In Reactive programming we react to data when it arrives, instead of waiting for the response. Reactive programming is extensively used for I/O operations.
 
-- ### 1. Asynchronous 
+- ### Asynchronous 
 
     Reactive Programming is asynchronous in nature i.e., it doesn't block the thread till it receives response, instead it registers for callbacks or listeners and continue with other works 
 
-- ### 2. Non-Blocking
+- ### Non-Blocking
 
     The I/O calls are non blocking in nature.
 
     eg: In a normal DB call the thread is blocked till we get the response back, but in reactive programming the thread  triggers a DB call and do other works and only reacts when there is a response.
 
-- ### 3. Event Driven
+- ### Event Driven
 
     Reactive system only reacts to events (eg : data arrival,server response etc). stream of events flows in and the application threads react to it 
 
@@ -279,7 +279,7 @@ In the Restaurants analogy
     - ### 1. Publisher 
         Publisher  publishes the event to the broker but in Reactor there is no separate broker the publisher it self acts as broker the publisher it self handles the flow of data. there are 2 type of publishers Flux and mono 
 
-        - ### Flux 
+        - ### a. Flux 
             Flux is the standard publisher that emits 0 or more items  
 
             ![Alt text](images/mono.svg)
@@ -290,7 +290,7 @@ In the Restaurants analogy
             Flux<String> flux = Flux.just("Apple", "Banana", "Cherry");
             ```
 
-        - ### Mono 
+        - ### b. Mono 
             Mono is the standard publisher that emits 0 or 1 items 
 
             ![Alt text](images/flux.svg)
@@ -306,7 +306,7 @@ In the Restaurants analogy
         A publisher can Publish event stream in 2 ways Hot publish and cold publish 
 
 
-        - ### Hot Publish 
+        - ### i. Hot Publish 
             Hot publish emits data independent of subscribers. Subscribers may miss events if they don't subscribe from the beginning 
 
             its more like streaming live match you will see from when you started from watching but not form start 
@@ -319,7 +319,7 @@ In the Restaurants analogy
 
             ```
 
-        - ### Cold Publish 
+        - ### ii. Cold Publish 
             Cold publish start emitting data only after the subscribe() initiates the pipeline 
 
             its more like watching a movie you can start watching from the start 
