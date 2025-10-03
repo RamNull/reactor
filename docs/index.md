@@ -450,10 +450,116 @@ In the Restaurants analogy
 
 - ## Thread Pooling  
 
+    Thread pooling is the concept where threads are pooled together and can be reused when needed. In Reactor the thread pool concept is abstracted to scheduler 
+
+    - ## Scheduler 
+        A Scheduler is abstraction of thread pool Created by reactor library. it basically used to define which thread and what type of thread needs to be used when running a reactive pipeline 
+
+        Scheduler can be used by calling `subscribeOn(Scheduler)` and `publishOn(Scheduler)`
+
+        - ### subscribeOn 
+            To control Upstream Execution (source) best for blocking like I/O operations where ever the subscribeOn is kept in the pipeline chain it effects from the  source
+
+            ```java
+                Mono<String> mono = Mono.fromCallable(() -> {
+                    log("Source executing");
+                    Thread.sleep(1000); // source replication
+                    return "data";
+                })
+                .map(data -> {
+                    log("Map1");
+                    return data.toUpperCase();
+                })
+                .subscribeOn(Schedulers.boundedElastic()) // ✅ Effective
+                .map(data -> {
+                log("Map2");
+                return data + "!";
+                })
+                .subscribeOn(Schedulers.parallel()); // ❌ Ignored
+
+                mono.subscribe(data -> log("Final: " + data));
+
+            ```
+            - ### Output 
+
+            ```java
+
+                boundedElastic-1 --> Source executing
+                boundedElastic-1 --> Map1
+                boundedElastic-1 --> Map2
+                boundedElastic-1 --> Final: DATA!
+
+            ```
+
+            if you want to have a different thread pool to work on it use `publishOn()`
+
+        - ### publishOn 
+            To control Downstream Execution (operators) like map and filter. `publishOn()` switches the thread for all subsequent operations till we see a new `publishOn()`
+
+            ```java
+
+                import reactor.core.publisher.Mono;
+                import reactor.core.scheduler.Schedulers;
+
+                public class ThreadSwitchExample {
+
+                    public static void main(String[] args) throws InterruptedException {
+
+                         Mono.fromCallable(() -> {
+                                log("Source executing");
+                                Thread.sleep(1000); // source 
+                                return "🍎 Apple";
+                            })
+                            .map(data -> {
+                                log("Stage 1 (Initial map): " + data);
+                                return data.toUpperCase();
+                            })
+                            .publishOn(Schedulers.parallel()) // Switch to parallel thread for next steps
+                            .map(data -> {
+                                log("Stage 2 (CPU-heavy map): " + data);
+                                return data + " 💪";
+                            })
+                            .publishOn(Schedulers.single()) // Switch to a single thread (e.g., for ordered logging)
+                            .map(data -> {
+                                log("Stage 3 (Single-threaded map): " + data);
+                                return data + " ✅";
+                            })
+
+                            .subscribeOn(Schedulers.boundedElastic()) // Controls where the whole pipeline *starts* from the Mono.fromCallable
+                            .subscribe(finalResult -> log("Final subscriber: " + finalResult));
+
+                        // Keep JVM alive to see all logs
+                        Thread.sleep(2000);
+                    }
+
+                    private static void log(String msg) {
+                        System.out.println(Thread.currentThread().getName() + " --> " + msg);
+                    }
+                }
 
 
+            ```
 
+            - ### Output 
 
+            ```java
+                boundedElastic-1 --> Stage 1 (Initial map): 🍎 Apple
+                parallel-1       --> Stage 2 (CPU-heavy map): 🍎 APPLE
+                single-1         --> Stage 3 (Single-threaded map): 🍎 APPLE 💪
+                single-1         --> Final subscriber: 🍎 APPLE 💪 ✅
+            ```
+        
+        - ### Types of Schedulers
+            reactor has different types of schedulers each for a different purpose below are the list and what they are used for 
 
+            | Scheduler          | Thread Pool Type       | Use Case                       | Blocking Safe? |
+            |--------------------|------------------------|--------------------------------|----------------|
+            | `boundedElastic()` | Dynamic, elastic       | Blocking I/O, JDBC, files      | ✅ Yes          |
+            | `parallel()`       | Fixed-size (CPU cores) | CPU-intensive tasks            | ❌ No           |
+            | `single()`         | Single-threaded        | Sequential, ordered tasks      | ❌ No           |
+            | `immediate()`      | Caller thread          | Lightweight sync work          | ✅ Yes          |
+            | `fromExecutor()`   | Custom                 | Fine-grained thread management | Depends        |
+ 
 
+        
 
