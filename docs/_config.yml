@@ -1,29 +1,32 @@
-# /docs/_config.yml
-
 # Site settings
 title: "Reactor Tutorial"
 description: "In-depth dissection of Reactive Programming Internal Working"
-url: "https://ramnull.github.io"  # your GitHub Pages URL
-# baseurl: "/reactor"   # DO NOT set baseurl, GitHub automatically handles repo name
+url: "https://ramnull.github.io"   # your GitHub Pages URL
+# baseurl: "/reactor"              # leave commented, GitHub handles it
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
+  toc_levels: 1..3                 # ensures IDs for h1–h3 (used by sidebar TOC)
 highlighter: rouge
 
+# Theme
 remote_theme: pages-themes/cayman@v0.2.0
+
+# Plugins (safe for GitHub Pages)
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
+  - jekyll-seo-tag                 # you’re already using {% seo %} in layout
 
 # Include and exclude
 include: ["*.md"]
 exclude: ["README.md"]
 
 # Permalinks
-permalink: /:title.html   # ensures reactive-programming.md -> reactive-programming.html
+permalink: /:title.html            # reactive-programming.md -> reactive-programming.html
 
-# Optional: Enable syntax highlighting for code blocks
-# Example usage in markdown: ```ruby ... ```
-
+# Social / Links
 linkedin: "https://www.linkedin.com/in/sriram-nallas"
+author: "Sriram Nalla"            # optional, used in footer if you want
+show_downloads: false              # matches layout button condition
