@@ -18,7 +18,7 @@
 
     Even though asynchronous and non-blocking looks kind of the same they are not. Asynchronous makes sure that the main thread is not waiting for the response but there will be other threads that are working in the background. where as non-blocking I/O doesn't block the thread once an I/O call is made the thread works with other requests
 
-    - ### Example 
+    - #### Example 
 
         In the below code snippet the response is both async and non-blocking when we execute the below code the main thread doesn't wait till response comes it just goes to the next statement i.e., "Request sent!" at the same time its non-blocking as it doesn't block any thread 
 
@@ -167,6 +167,8 @@ we will discuss how reactive programming works using the Reactor Library but Bef
         ```
 
     ---
+
+- ## OS
 
     OS Components that you need to be aware of 
 
@@ -480,7 +482,7 @@ In the Restaurants analogy
                 mono.subscribe(data -> log("Final: " + data));
 
             ```
-            - ### Output 
+            - #### Output 
 
             ```java
 
@@ -540,7 +542,7 @@ In the Restaurants analogy
 
             ```
 
-            - ### Output 
+            - #### Output 
 
             ```java
                 boundedElastic-1 --> Stage 1 (Initial map): 🍎 Apple
