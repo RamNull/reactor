@@ -421,8 +421,32 @@ In the Restaurants analogy
     - `onBackpressureDrop()` if **data can be skipped** during load,
     - `onBackpressureLatest()` if only the **latest data matters**.
 
+    ```java
+    //  onBackpressureBuffer
+    Flux.interval(Duration.ofNanos(1))
+    .onBackpressureBuffer(1000) // buffers only 1000 items
+    .delayElements(Duration.ofMillis(100)) // simulate slow subscriber
+    .subscribe(i -> System.out.println("Processed: " + i));
 
+    // onBackpressureDrop
+    Flux.interval(Duration.ofNanos(1))
+    .onBackpressureDrop(i -> System.out.println("Dropped: " + i))
+    .delayElements(Duration.ofMillis(100))
+    .subscribe(i -> System.out.println("Processed: " + i));
 
+    // onBackpressureLatest
+    Flux.interval(Duration.ofNanos(1))
+    .onBackpressureLatest()
+    .delayElements(Duration.ofMillis(100))
+    .subscribe(i -> System.out.println("Processed latest: " + i));
+
+    // limitRate
+    Flux.range(1, 10_000_000)
+    .limitRate(10) // request only 10 at a time
+    .delayElements(Duration.ofMillis(100))
+    .subscribe(i -> System.out.println("Processed: " + i));
+
+    ```
 
 - ## Thread Pooling  
 
