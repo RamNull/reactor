@@ -264,6 +264,9 @@ In the Restaurants analogy
 
 ---
 
+
+# Reactor
+
 - ## Publisher-Subscriber Model
 
     Lets come to actual usage of the Reactive Programming. For implementation of reactive programming we have different libraries like RXjava or Reactor we will be working with reactor library.Reactor is a library that follows publisher-subscriber model.  
@@ -333,7 +336,7 @@ In the Restaurants analogy
 
         ```java
         
-        // Just Subscription and trigger 
+        // Just Subscription and trigger and gives the response 
         subscribe();
         
         // do something with each item 
@@ -343,11 +346,12 @@ In the Restaurants analogy
         subscribe(Consumer<? super T> consumer,
           Consumer<? super Throwable> errorConsumer);
           
-
+        // deals with values and error and runs some code 
         subscribe(Consumer<? super T> consumer,
           Consumer<? super Throwable> errorConsumer,
           Runnable completeConsumer);
-          
+        
+        // Deal with values and errors and successful completion but also do something with the Subscription produced by this subscribe call.
         subscribe(Consumer<? super T> consumer,
           Consumer<? super Throwable> errorConsumer,
           Runnable completeConsumer,
@@ -355,8 +359,72 @@ In the Restaurants analogy
 
         ```
 
+- ## BackPressure 
+    Backpressure is a mechanism where the subscriber can control the rate at which the data comes from publisher 
+    - publisher publishes the data 
+    - The Subscriber tells how many items it can consume at at time 
+    - produce will only emit that many items 
+
+    By Default flux support backpressure via request(n) 
+
+    ```java
+
+    Flux<Integer> flux = Flux.range(1, 10);
+
+    flux.subscribe(new Subscriber<Integer>() {
+            private Subscription subscription;
+            private int count = 0;
+
+            @Override
+            public void onSubscribe(Subscription s) {
+                this.subscription = s;
+                subscription.request(2); // Ask for 2 items at a time
+            }
+
+            @Override
+            public void onNext(Integer item) {
+                System.out.println("Received: " + item);
+                count++;
+                if (count % 2 == 0) {
+                    subscription.request(2); // Request next 2 items
+                }
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                System.err.println("Error: " + t);
+            }
+
+            @Override
+            public void onComplete() {
+                System.out.println("Completed!");
+            }
+        });
 
 
+    ```
+
+    there are other alternatives like
+
+    | Operator                  | Data Loss          | Memory Safe                 | Keeps Latest | Buffers             | Slows Source | Best Use Case                                      |
+    |---------------------------|--------------------|-----------------------------|---------------|---------------------|---------------|----------------------------------------------------|
+    | `onBackpressureBuffer(n)` | ❌ No (unless full) | ❌ No (can OOM if unbounded) | ❌ No         | ✅ Yes (up to limit) | ❌ No         | Must retain all data (e.g., logs, file writes)     |
+    | `onBackpressureDrop()`    | ✅ Yes              | ✅ Yes                       | ❌ No         | ❌ No                | ❌ No         | High-frequency non-critical data (e.g., telemetry) |
+    | `onBackpressureLatest()`  | ✅ Yes              | ✅ Yes                       | ✅ Yes        | ❌ No                | ❌ No         | Real-time updates (e.g., UI sliders, live prices)  |
+    | `limitRate(n)`            | ❌ No               | ✅ Yes                       | ✅ (indirect) | ❌ No                | ✅ Yes        | Throttling data sources (e.g., APIs, DB streams)   |
+
+    limitRate is best suited if the source like the Mongo reactive library which honour the backpressure if the source it self doesn't honour backpressure like http requests or message events its only the stream that will be honouring the backpressure in  which case there will be issue for data loss in such cases depending on the scenario its better to pick b/w the remaining operators 
+
+    
+    In such cases, depending on the use case, it's better to use:
+    - `onBackpressureBuffer()` if **data must be retained**,
+    - `onBackpressureDrop()` if **data can be skipped** during load,
+    - `onBackpressureLatest()` if only the **latest data matters**.
+
+
+
+
+- ## Thread Pooling  
 
 
 
