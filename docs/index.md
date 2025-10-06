@@ -282,7 +282,7 @@ In the Restaurants analogy
         - ### a. Flux 
             Flux is the standard publisher that emits 0 or more items  
 
-            ![Alt text](images/mono.svg)
+            ![Alt text](images/flux.svg)
 
             in the below code snippet the flux takes stream of 3 items.
 
@@ -293,7 +293,7 @@ In the Restaurants analogy
         - ### b. Mono 
             Mono is the standard publisher that emits 0 or 1 items 
 
-            ![Alt text](images/flux.svg)
+            ![Alt text](images/mono.svg)
 
             in the below code snippet mono takes stream of 1 item  "Hello Mono"
 
@@ -460,7 +460,7 @@ In the Restaurants analogy
         Scheduler can be used by calling `subscribeOn(Scheduler)` and `publishOn(Scheduler)`
 
         - ### subscribeOn 
-            To control Upstream Execution (source) best for blocking like I/O operations where ever the subscribeOn is kept in the pipeline chain it effects from the  source
+            To control Upstream Execution (source) best for I/O operations. where ever the subscribeOn is kept in the pipeline chain it effects from the source
 
             ```java
                 Mono<String> mono = Mono.fromCallable(() -> {
@@ -492,8 +492,7 @@ In the Restaurants analogy
                 boundedElastic-1 --> Final: DATA!
 
             ```
-
-            if you want to have a different thread pool to work on it use `publishOn()`
+            boundedElastic is used to run blocking I/O opperations on a different thread pool other than the event loop so it works only with subscribeOn. if you want to have a different type of thread pool to work on it use `publishOn()`
 
         - ### publishOn 
             To control Downstream Execution (operators) like map and filter. `publishOn()` switches the thread for all subsequent operations till we see a new `publishOn()`
