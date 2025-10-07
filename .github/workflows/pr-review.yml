@@ -1,0 +1,179 @@
+name: PR Review Agent
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    name: Automated PR Review
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get PR details
+        id: pr-details
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            });
+            
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            });
+            
+            core.setOutput('title', pr.title);
+            core.setOutput('body', pr.body || '');
+            core.setOutput('files_count', files.length);
+            core.setOutput('additions', pr.additions);
+            core.setOutput('deletions', pr.deletions);
+            
+            return {
+              title: pr.title,
+              filesChanged: files.length,
+              additions: pr.additions,
+              deletions: pr.deletions
+            };
+      
+      - name: Check PR size
+        id: check-size
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const additions = parseInt('${{ steps.pr-details.outputs.additions }}');
+            const deletions = parseInt('${{ steps.pr-details.outputs.deletions }}');
+            const totalChanges = additions + deletions;
+            
+            let sizeLabel = '';
+            let sizeComment = '';
+            
+            if (totalChanges < 50) {
+              sizeLabel = 'size/XS';
+              sizeComment = '✅ This is a very small PR. Great for quick reviews!';
+            } else if (totalChanges < 200) {
+              sizeLabel = 'size/S';
+              sizeComment = '✅ This is a small PR. Should be easy to review.';
+            } else if (totalChanges < 500) {
+              sizeLabel = 'size/M';
+              sizeComment = '⚠️ This is a medium-sized PR. Consider breaking it into smaller PRs if possible.';
+            } else if (totalChanges < 1000) {
+              sizeLabel = 'size/L';
+              sizeComment = '⚠️ This is a large PR. Please consider breaking it into smaller, focused PRs.';
+            } else {
+              sizeLabel = 'size/XL';
+              sizeComment = '🚨 This is a very large PR. It will be difficult to review. Please break it into smaller PRs.';
+            }
+            
+            core.setOutput('size_label', sizeLabel);
+            core.setOutput('size_comment', sizeComment);
+      
+      - name: Post review comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const filesCount = parseInt('${{ steps.pr-details.outputs.files_count }}');
+            const additions = parseInt('${{ steps.pr-details.outputs.additions }}');
+            const deletions = parseInt('${{ steps.pr-details.outputs.deletions }}');
+            const sizeComment = '${{ steps.check-size.outputs.size_comment }}';
+            
+            const reviewComment = `## 🤖 Automated PR Review
+            
+            ### PR Statistics
+            - **Files changed:** ${filesCount}
+            - **Lines added:** +${additions}
+            - **Lines deleted:** -${deletions}
+            - **Total changes:** ${additions + deletions}
+            
+            ### Size Assessment
+            ${sizeComment}
+            
+            ### Checklist
+            Please ensure the following before merging:
+            - [ ] Code follows the project's coding standards
+            - [ ] Tests have been added/updated
+            - [ ] Documentation has been updated (if needed)
+            - [ ] All CI checks pass
+            - [ ] PR has been reviewed by at least one team member
+            
+            ---
+            *This is an automated review. Please reach out to maintainers if you have questions.*`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: reviewComment
+            });
+      
+      - name: Add size label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const sizeLabel = '${{ steps.check-size.outputs.size_label }}';
+            
+            // Remove existing size labels
+            const { data: labels } = await github.rest.issues.listLabelsOnIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+            
+            for (const label of labels) {
+              if (label.name.startsWith('size/')) {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  name: label.name
+                });
+              }
+            }
+            
+            // Add new size label
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [sizeLabel]
+              });
+            } catch (error) {
+              // Label might not exist, try to create it
+              const colors = {
+                'size/XS': '00ff00',
+                'size/S': '90EE90',
+                'size/M': 'FFD700',
+                'size/L': 'FFA500',
+                'size/XL': 'FF0000'
+              };
+              
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: sizeLabel,
+                color: colors[sizeLabel] || 'CCCCCC',
+                description: `Pull request size: ${sizeLabel.split('/')[1]}`
+              });
+              
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [sizeLabel]
+              });
+            }
