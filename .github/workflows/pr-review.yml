@@ -3,6 +3,12 @@ name: PR Review Agent
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  pull_request_review:
+    types: [submitted]
+  pull_request_review_comment:
+    types: [created]
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: read
@@ -178,3 +184,138 @@ jobs:
                 labels: [sizeLabel]
               });
             }
+  
+  respond-to-review:
+    runs-on: ubuntu-latest
+    name: Respond to Review Comments
+    if: |
+      github.event_name == 'pull_request_review' ||
+      github.event_name == 'pull_request_review_comment' ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request)
+    
+    steps:
+      - name: Check if comment needs response
+        id: check-comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let commentBody = '';
+            let commentId = 0;
+            let commentType = '';
+            
+            // Determine the comment source and extract the body
+            if (context.eventName === 'pull_request_review') {
+              commentBody = context.payload.review.body || '';
+              commentId = context.payload.review.id;
+              commentType = 'review';
+            } else if (context.eventName === 'pull_request_review_comment') {
+              commentBody = context.payload.comment.body || '';
+              commentId = context.payload.comment.id;
+              commentType = 'review_comment';
+            } else if (context.eventName === 'issue_comment') {
+              commentBody = context.payload.comment.body || '';
+              commentId = context.payload.comment.id;
+              commentType = 'issue_comment';
+            }
+            
+            // Check if this is from the bot itself to avoid infinite loops
+            const isBot = context.payload.sender.type === 'Bot' || 
+                         context.payload.sender.login.includes('[bot]');
+            
+            if (isBot) {
+              console.log('Comment is from a bot, skipping response');
+              core.setOutput('should_respond', 'false');
+              return;
+            }
+            
+            // Keywords that might indicate a question or request for clarification
+            const questionKeywords = ['?', 'why', 'how', 'what', 'could you', 'can you', 
+                                     'please explain', 'clarify', 'unclear', 'confused',
+                                     'help', 'question', 'wondering'];
+            
+            const needsResponse = questionKeywords.some(keyword => 
+              commentBody.toLowerCase().includes(keyword)
+            );
+            
+            core.setOutput('should_respond', needsResponse ? 'true' : 'false');
+            core.setOutput('comment_body', commentBody);
+            core.setOutput('comment_id', commentId.toString());
+            core.setOutput('comment_type', commentType);
+            
+            return {
+              shouldRespond: needsResponse,
+              commentBody: commentBody,
+              commentType: commentType
+            };
+      
+      - name: Post response
+        if: steps.check-comment.outputs.should_respond == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commentType = '${{ steps.check-comment.outputs.comment_type }}';
+            const originalComment = `${{ steps.check-comment.outputs.comment_body }}`;
+            
+            // Craft a helpful response
+            let responseBody = `## 🤖 Copilot Review Response\n\n`;
+            responseBody += `Thank you for your review feedback! `;
+            
+            // Analyze the comment to provide appropriate response
+            const lowerComment = originalComment.toLowerCase();
+            
+            if (lowerComment.includes('test') || lowerComment.includes('testing')) {
+              responseBody += `\n\nRegarding testing:\n`;
+              responseBody += `- This PR should include relevant tests as noted in the review checklist.\n`;
+              responseBody += `- Please ensure test coverage is maintained or improved.\n`;
+              responseBody += `- Check that all existing tests still pass.\n`;
+            }
+            
+            if (lowerComment.includes('document') || lowerComment.includes('doc')) {
+              responseBody += `\n\nRegarding documentation:\n`;
+              responseBody += `- Please update relevant documentation if this PR changes behavior or adds features.\n`;
+              responseBody += `- Consider updating README, inline comments, or API documentation as needed.\n`;
+            }
+            
+            if (lowerComment.includes('breaking') || lowerComment.includes('backward')) {
+              responseBody += `\n\nRegarding compatibility:\n`;
+              responseBody += `- Please verify if this introduces any breaking changes.\n`;
+              responseBody += `- Consider versioning and migration strategies if needed.\n`;
+              responseBody += `- Update CHANGELOG if applicable.\n`;
+            }
+            
+            if (lowerComment.includes('performance') || lowerComment.includes('perf')) {
+              responseBody += `\n\nRegarding performance:\n`;
+              responseBody += `- Consider performance implications of the changes.\n`;
+              responseBody += `- Add benchmarks if introducing performance-sensitive code.\n`;
+              responseBody += `- Profile the changes if there are concerns about efficiency.\n`;
+            }
+            
+            if (lowerComment.includes('security') || lowerComment.includes('secure')) {
+              responseBody += `\n\nRegarding security:\n`;
+              responseBody += `- Please review for potential security vulnerabilities.\n`;
+              responseBody += `- Ensure sensitive data is properly handled.\n`;
+              responseBody += `- Consider running security scanning tools.\n`;
+            }
+            
+            // Generic response if no specific topics detected
+            if (responseBody === `## 🤖 Copilot Review Response\n\nThank you for your review feedback! `) {
+              responseBody += `\n\nYour comment has been noted. The PR author will review your feedback and provide clarification or make necessary changes.\n\n`;
+              responseBody += `**Common review items to check:**\n`;
+              responseBody += `- [ ] Code quality and standards compliance\n`;
+              responseBody += `- [ ] Test coverage and correctness\n`;
+              responseBody += `- [ ] Documentation completeness\n`;
+              responseBody += `- [ ] Performance considerations\n`;
+              responseBody += `- [ ] Security implications\n`;
+            }
+            
+            responseBody += `\n\n---\n`;
+            responseBody += `*This is an automated response to help address common review concerns. `;
+            responseBody += `The PR author will provide specific answers to your questions.*`;
+            
+            // Post the response as a comment on the PR
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: responseBody
+            });

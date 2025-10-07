@@ -33,20 +33,59 @@ Each PR receives an automated checklist to ensure quality:
 - All CI checks pass
 - PR has been reviewed by at least one team member
 
+### 4. **Intelligent Review Comment Responses**
+When reviewers leave comments with questions or feedback, the bot automatically responds with helpful guidance:
+- Detects questions and requests for clarification (looks for keywords like "?", "why", "how", "what", "clarify", etc.)
+- Provides context-aware responses based on comment content:
+  - Testing and test coverage guidance
+  - Documentation reminders
+  - Breaking change considerations
+  - Performance review tips
+  - Security best practices
+- Avoids infinite loops by not responding to other bots
+- Helps facilitate productive discussions between reviewers and PR authors
+
 ## How It Works
 
 The workflow is triggered on the following events:
 - When a PR is opened (`opened`)
 - When new commits are pushed to an existing PR (`synchronize`)
 - When a closed PR is reopened (`reopened`)
+- When a review is submitted on a PR (`pull_request_review`)
+- When a review comment is created (`pull_request_review_comment`)
+- When a comment is added to a PR (`issue_comment`)
 
-### Workflow Steps
+### Workflow Jobs
+
+#### 1. Automated PR Review
+This job runs when a PR is opened, synchronized, or reopened.
+
+Steps:
+
+Steps:
 
 1. **Checkout Code**: Fetches the repository code with full history
 2. **Get PR Details**: Retrieves information about the PR including files changed and line counts
 3. **Check PR Size**: Calculates the total changes and assigns an appropriate size label
 4. **Post Review Comment**: Creates a detailed comment on the PR with statistics and checklist
 5. **Add Size Label**: Applies the size label to the PR (creates the label if it doesn't exist)
+
+#### 2. Respond to Review Comments
+This job runs when someone submits a review or comments on a PR.
+
+Steps:
+
+1. **Check if Comment Needs Response**: Analyzes the comment to determine if it contains questions or requests for clarification
+2. **Post Response**: Automatically responds with helpful guidance based on the content of the review comment
+
+The bot intelligently detects keywords related to:
+- Testing and test coverage
+- Documentation
+- Breaking changes and backward compatibility
+- Performance considerations
+- Security concerns
+
+And provides relevant automated guidance to help reviewers and PR authors have more productive discussions.
 
 ## Permissions
 
@@ -111,6 +150,28 @@ Please ensure the following before merging:
 
 ---
 *This is an automated review. Please reach out to maintainers if you have questions.*
+```
+
+### Review Comment Response Example
+
+When a reviewer leaves a comment with a question like:
+
+> "Have tests been added for this new feature?"
+
+The bot will automatically respond:
+
+```markdown
+## 🤖 Copilot Review Response
+
+Thank you for your review feedback! 
+
+Regarding testing:
+- This PR should include relevant tests as noted in the review checklist.
+- Please ensure test coverage is maintained or improved.
+- Check that all existing tests still pass.
+
+---
+*This is an automated response to help address common review concerns. The PR author will provide specific answers to your questions.*
 ```
 
 ## Disabling the Workflow
