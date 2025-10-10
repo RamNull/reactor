@@ -35,7 +35,7 @@ Lets assume a simple scenario of view cart or wishlist and should be able to sha
     - Postgres : To get the offer Details from DB 
 
 # Prerequisites  
-in order to Replicate and use Services and Components we will be using mockApis and Scripts to add use [https://mockapi.io/](https://mockapi.io/) to create mocks for cart and other services below are the data that you could download and use for mock 
+in order to Replicate and use Services and Components we will be using mockApis and Scripts to add use [https://mockapi.io/](https://mockapi.io/) or apps like Mockoon to create mocks for cart and other services. **prefer Mockoon as there are no restrictions on the no of mocks that you can make** below are the data that you could download and use for mock 
 
 - Product : [Download products mock data](./working-example/json/products.json)
 - Payments : [Download payments mock data](./working-example/json/payments.json)
