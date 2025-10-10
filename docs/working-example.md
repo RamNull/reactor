@@ -42,6 +42,7 @@ in order to Replicate and use Services and Components we will be using mockApis 
 - Stocks & Offers : [Download stocks & offers mock data ](./working-example/json/stocks-offers.json)
 - Cart : [Download Cart mock Data](./working-example/json/cart.json)
 - Offers Scripts : [Download offers DB Script](./working-example/scripts/offers.sql)
+- Postman-Collections: [Download postman collection](./working-example/postman/Reactor%20Mocks.postman_collection.json)
 
 ## Code
 

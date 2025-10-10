@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "d8612a08-e171-48f8-b114-cca4fb292059",
+		"name": "Reactor Mocks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/v1/cart/d51beded-d92b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"d51beded-d92b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"86f14e73-386d-4679-aba9-a39311c6dfad\",\r\n    \"createdAt\": \"2025-04-05 02:59:43\",\r\n    \"name\": \"Mi Power Bank\",\r\n    \"brand\": \"Mi\",\r\n    \"sku\": \"SKU26950\",\r\n    \"category\": \"Batteries & Accessories\",\r\n    \"subCategory\": \"Limited Edition\",\r\n    \"tags\": [\r\n        \"new-arrival\",\r\n        \"durable\",\r\n        \"limited-stock\"\r\n    ],\r\n    \"media\": {\r\n        \"thumbnail\": \"https://www.lorempixel.com/213/224\",\r\n        \"images\": [\r\n            \"https://placekitten.com/389/104\"\r\n        ]\r\n    },\r\n    \"specifications\": {\r\n        \"capacity\": \"5765 mAh\",\r\n        \"voltage\": \"12.0V\",\r\n        \"type\": \"NiMH\",\r\n        \"rechargeable\": false\r\n    },\r\n    \"additionalInfo\": {\r\n        \"warranty\": \"2 Years\",\r\n        \"originCountry\": \"Italy\",\r\n        \"returnable\": true,\r\n        \"exchangeEligible\": true,\r\n        \"popularityScore\": 95,\r\n        \"shelfLife\": \"4 years\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"86f14e73-386d-4e79-aba9-a39311c6dfad\",\r\n    \"createdAt\": \"2025-04-05 02:59:43\",\r\n    \"name\": \"Mi Power Bank Ultra\",\r\n    \"brand\": \"Mi\",\r\n    \"sku\": \"SKU26950\",\r\n    \"category\": \"Batteries & Accessories\",\r\n    \"subCategory\": \"Limited Edition\",\r\n    \"tags\": [\r\n        \"new-arrival\",\r\n        \"durable\",\r\n        \"limited-stock\"\r\n    ],\r\n    \"media\": {\r\n        \"thumbnail\": \"https://www.lorempixel.com/213/224\",\r\n        \"images\": [\r\n            \"https://placekitten.com/389/104\"\r\n        ]\r\n    },\r\n    \"specifications\": {\r\n        \"capacity\": \"5765 mAh\",\r\n        \"voltage\": \"12.0V\",\r\n        \"type\": \"NiMH\",\r\n        \"rechargeable\": false\r\n    },\r\n    \"additionalInfo\": {\r\n        \"warranty\": \"2 Years\",\r\n        \"originCountry\": \"Italy\",\r\n        \"returnable\": true,\r\n        \"exchangeEligible\": true,\r\n        \"popularityScore\": 95,\r\n        \"shelfLife\": \"4 years\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Get Carts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/v1/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/details/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"details",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"d51beded-d93b-48a8-9b1f-a64c5ba41022\",\r\n    \"products\": [\r\n        {\r\n            \"productId\": \"86f14e73-386d-4e79-aba9-a39311c6dfad\",\r\n            \"count\": 3\r\n        },\r\n        {\r\n            \"productId\": \"bbde65a2-8f02-414a-8f6f-ee825e367c46\",\r\n            \"count\": 2\r\n        },\r\n        {\r\n            \"productId\": \"c1f3b0aa-c05d-4038-98b4-1421ecb56f5b\",\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"productId\": \"0daac303-193a-486c-8d5b-8ffee424f369\",\r\n            \"count\": 4\r\n        },\r\n        {\r\n            \"productId\": \"91f9c744-a279-4c59-be4e-e4c5a53ac5ce\",\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"productId\": \"2c3f02b2-d644-4eb3-b96b-ca02c35c596a\",\r\n            \"count\": 5\r\n        },\r\n        {\r\n            \"productId\": \"66c5a304-b486-45b3-be4c-ec23b3c4a684\",\r\n            \"count\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update cart",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"d51beded-d92b-48a8-9b1f-a64c5ba41022\",\r\n    \"products\": [\r\n        {\r\n            \"productId\": \"86f14e73-386d-4e79-aba9-a39311c6dfad\",\r\n            \"count\": 10\r\n        },\r\n        {\r\n            \"productId\": \"bbde65a2-8f02-414a-8f6f-ee825e367c46\",\r\n            \"count\": 2\r\n        },\r\n        {\r\n            \"productId\": \"c1f3b0aa-c05d-4038-98b4-1421ecb56f5b\",\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"productId\": \"0daac303-193a-486c-8d5b-8ffee424f369\",\r\n            \"count\": 4\r\n        },\r\n        {\r\n            \"productId\": \"91f9c744-a279-4c59-be4e-e4c5a53ac5ce\",\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"productId\": \"2c3f02b2-d644-4eb3-b96b-ca02c35c596a\",\r\n            \"count\": 5\r\n        },\r\n        {\r\n            \"productId\": \"66c5a304-b486-45b3-be4c-ec23b3c4a684\",\r\n            \"count\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/api/v1/cart/d51beded-d92b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"d51beded-d92b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/api/v1/cart/d51beded-d92b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"d51beded-d92b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stocks&Offers",
+			"item": [
+				{
+					"name": "Get Stocks & Offers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/v1/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"v1",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stocks & Offers By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Stocks & Offers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"86f14e73-386d-4e79-aba9-a39311c6dfad\",\r\n    \"offerIds\": [\r\n        \"ORD1\",\r\n        \"ORD3\",\r\n        \"ORD7\"\r\n    ],\r\n    \"price\": 82490,\r\n    \"stock\": 977\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Stocks & Offers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"86f14e73-386d-4e79-aba9-a39311c6dfad\",\r\n    \"offerIds\": [\r\n        \"ORD1\",\r\n        \"ORD3\",\r\n        \"ORD7\"\r\n    ],\r\n    \"price\": 82490,\r\n    \"stock\": 977\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/product/86f14e73-386d-4e79-aba9-a39311c6dfad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"86f14e73-386d-4e79-aba9-a39311c6dfad"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "Get Payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/payments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payments By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/payments/d51beded-d02b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"payments",
+								"d51beded-d02b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Payments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"d51beded-d02b-48a8-9b1f-a64c5ba41022\",\r\n    \"billingAddress\": {\r\n        \"line1\": \"2375 Dwayne Route\",\r\n        \"line2\": \"Apt. 732\",\r\n        \"city\": \"North Tiffany\",\r\n        \"state\": \"Michigan\",\r\n        \"postalCode\": \"32542\",\r\n        \"country\": \"Hungary\"\r\n    },\r\n    \"paymentInfo\": {\r\n        \"credit\": [\r\n            {\r\n                \"number\": \"4324485450390206408\",\r\n                \"name\": \"Angela Collins\",\r\n                \"validTill\": \"06/26\",\r\n                \"cvv\": \"639\",\r\n                \"bankName\": \"Yes Bank\",\r\n                \"provider\": \"Visa\",\r\n                \"emiAvailable\": false,\r\n                \"creditLimit\": 245901\r\n            }\r\n        ],\r\n        \"debit\": [\r\n            {\r\n                \"number\": \"4146842506260\",\r\n                \"name\": \"Brian Russo\",\r\n                \"validTill\": \"10/34\",\r\n                \"cvv\": \"525\",\r\n                \"bankName\": \"Kotak Mahindra Bank\",\r\n                \"provider\": \"Amex\"\r\n            },\r\n            {\r\n                \"number\": \"3590157435232689\",\r\n                \"name\": \"Miranda Armstrong\",\r\n                \"validTill\": \"08/35\",\r\n                \"cvv\": \"674\",\r\n                \"bankName\": \"Axis Bank\",\r\n                \"provider\": \"RuPay\"\r\n            },\r\n            {\r\n                \"number\": \"30110620509118\",\r\n                \"name\": \"Richard Mcintyre PhD\",\r\n                \"validTill\": \"12/34\",\r\n                \"cvv\": \"538\",\r\n                \"bankName\": \"State Bank of India\",\r\n                \"provider\": \"MasterCard\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/payments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Payments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"d51beded-d02b-48a8-9b1f-a64c5ba41022\",\r\n    \"billingAddress\": {\r\n        \"line1\": \"2375 Dwayne Route\",\r\n        \"line2\": \"Apt. 732\",\r\n        \"city\": \"North Tiffany\",\r\n        \"state\": \"Michigan\",\r\n        \"postalCode\": \"32542\",\r\n        \"country\": \"Hungary\"\r\n    },\r\n    \"paymentInfo\": {\r\n        \"credit\": [\r\n            {\r\n                \"number\": \"4324485450390206408\",\r\n                \"name\": \"Angela Collins\",\r\n                \"validTill\": \"06/26\",\r\n                \"cvv\": \"639\",\r\n                \"bankName\": \"Yes Bank\",\r\n                \"provider\": \"Visa\",\r\n                \"emiAvailable\": false,\r\n                \"creditLimit\": 245901\r\n            }\r\n        ],\r\n        \"debit\": [\r\n            {\r\n                \"number\": \"4146842506260\",\r\n                \"name\": \"Brian Russo\",\r\n                \"validTill\": \"10/34\",\r\n                \"cvv\": \"525\",\r\n                \"bankName\": \"Kotak Mahindra Bank\",\r\n                \"provider\": \"Amex\"\r\n            },\r\n            {\r\n                \"number\": \"3590157435232689\",\r\n                \"name\": \"Miranda Armstrong\",\r\n                \"validTill\": \"08/35\",\r\n                \"cvv\": \"674\",\r\n                \"bankName\": \"Axis Bank\",\r\n                \"provider\": \"RuPay\"\r\n            },\r\n            {\r\n                \"number\": \"30110620509118\",\r\n                \"name\": \"Richard Mcintyre PhD\",\r\n                \"validTill\": \"12/34\",\r\n                \"cvv\": \"538\",\r\n                \"bankName\": \"State Bank of India\",\r\n                \"provider\": \"MasterCard\"\r\n            }\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/payments/d51beded-d02b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"payments",
+								"d51beded-d02b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/payments/d51beded-d02b-48a8-9b1f-a64c5ba41022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"payments",
+								"d51beded-d02b-48a8-9b1f-a64c5ba41022"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
