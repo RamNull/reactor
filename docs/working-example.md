@@ -6,7 +6,7 @@ permalink: /example
 ---
 
 # Reactor
-Reactive programming is a programming paradigm that does async, non blocking I/O and event driven execution and Reactor is the library that handles reactive programming which makes the thread life easier. We have discussed in depth about the reactive programming and reactor in [https://ramnull.github.io/reactor](https://ramnull.github.io/reactor). In this page we will try to use the reactive programming to its max potential and to achieve we will be using different services and components like sql , no-sql , cache , web-flux along with blocking, non-blocking , parallel and single schedular types along with back-pressure cases  
+Reactive programming is a programming paradigm that does async, non blocking I/O and event driven execution and Reactor is the library that handles reactive programming which makes the thread life easier. We have discussed in depth about the reactive programming and reactor in [Reactive programming](https://ramnull.github.io/reactor). In this page we will try to use the reactive programming to its max potential and to achieve we will be using different services and components like sql , no-sql , cache , web-flux along with blocking, non-blocking , parallel and single schedular types along with back-pressure cases  
 
 # Scenario 
 Lets assume a simple scenario of view cart or wishlist and should be able to share the cart details to others. seems simple right but this is not as simple as it looks as a lot of services and infra that works in the background. Just at higher level to get the information the aggregator service needs to make calls to multiple services like and follow multiple steps 
@@ -35,7 +35,7 @@ Lets assume a simple scenario of view cart or wishlist and should be able to sha
     - Postgres : To get the offer Details from DB 
 
 # Prerequisites  
-in order to Replicate and use Services and Components we will be using mockApis and Scripts to add use [https://mockapi.io/](mockapi) or apps like [https://mockoon.com/download/](Mockoon) to create mocks for cart and other services. **prefer Mockoon as there are no restrictions on the number of mocks that you can make**.  
+in order to Replicate and use Services and Components we will be using mockApis and Scripts to add use [mock-api](https://mockapi.io/) or apps like [Mockoon](https://mockoon.com/download/) to create mocks for cart and other services. **prefer Mockoon as there are no restrictions on the number of mocks that you can make**.  
 
 below are the data that you could download and use for mock 
 
