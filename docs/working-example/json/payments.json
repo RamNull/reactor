@@ -1,0 +1,512 @@
+[
+  {
+    "userId": "d51beded-d92b-48a8-9b1f-a64c5ba41022",
+    "billingAddress": {
+      "line1": "2375 Dwayne Route",
+      "line2": "Apt. 732",
+      "city": "North Tiffany",
+      "state": "Michigan",
+      "postalCode": "32542",
+      "country": "Hungary"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "4324485450390206408",
+          "name": "Angela Collins",
+          "validTill": "06/26",
+          "cvv": "639",
+          "bankName": "Yes Bank",
+          "provider": "Visa",
+          "emiAvailable": false,
+          "creditLimit": 245901
+        }
+      ],
+      "debit": [
+        {
+          "number": "4146842506260",
+          "name": "Brian Russo",
+          "validTill": "10/34",
+          "cvv": "525",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "Amex"
+        },
+        {
+          "number": "3590157435232689",
+          "name": "Miranda Armstrong",
+          "validTill": "08/35",
+          "cvv": "674",
+          "bankName": "Axis Bank",
+          "provider": "RuPay"
+        },
+        {
+          "number": "30110620509118",
+          "name": "Richard Mcintyre PhD",
+          "validTill": "12/34",
+          "cvv": "538",
+          "bankName": "State Bank of India",
+          "provider": "MasterCard"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "65b6a8b0-aca3-4ce3-81cf-5b82756d933f",
+    "billingAddress": {
+      "line1": "4656 Crystal Wells Suite 574",
+      "line2": "Apt. 158",
+      "city": "North Richard",
+      "state": "Indiana",
+      "postalCode": "19286",
+      "country": "Sri Lanka"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "213124335985652",
+          "name": "Brandi Thompson",
+          "validTill": "04/28",
+          "cvv": "991",
+          "bankName": "Yes Bank",
+          "provider": "Amex",
+          "emiAvailable": true,
+          "creditLimit": 184654
+        },
+        {
+          "number": "4147752795148719",
+          "name": "Daniel Moore",
+          "validTill": "10/30",
+          "cvv": "969",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "Visa",
+          "emiAvailable": true,
+          "creditLimit": 287145
+        }
+      ],
+      "debit": [
+        {
+          "number": "6011512407796588",
+          "name": "Daniel Douglas",
+          "validTill": "03/30",
+          "cvv": "3210",
+          "bankName": "HDFC Bank",
+          "provider": "Visa"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "6b5a183e-a856-4198-a996-ba97b9126aa8",
+    "billingAddress": {
+      "line1": "198 Mckay Loop",
+      "line2": "Apt. 525",
+      "city": "Margaretland",
+      "state": "Rhode Island",
+      "postalCode": "12977",
+      "country": "El Salvador"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "180006416280294",
+          "name": "Sabrina Fuentes",
+          "validTill": "04/32",
+          "cvv": "823",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "RuPay",
+          "emiAvailable": false,
+          "creditLimit": 277730
+        },
+        {
+          "number": "180088759354936",
+          "name": "Caroline Baker",
+          "validTill": "02/29",
+          "cvv": "132",
+          "bankName": "ICICI Bank",
+          "provider": "MasterCard",
+          "emiAvailable": false,
+          "creditLimit": 78817
+        },
+        {
+          "number": "346437505496478",
+          "name": "Timothy Wise",
+          "validTill": "09/29",
+          "cvv": "2882",
+          "bankName": "Yes Bank",
+          "provider": "MasterCard",
+          "emiAvailable": false,
+          "creditLimit": 288334
+        }
+      ],
+      "debit": [
+        {
+          "number": "4794467308953507",
+          "name": "Jennifer Wall",
+          "validTill": "01/27",
+          "cvv": "075",
+          "bankName": "Yes Bank",
+          "provider": "Amex"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "15e42d5d-7559-4c98-a43c-63972fbeacd7",
+    "billingAddress": {
+      "line1": "52358 Robert Bridge",
+      "line2": "Suite 471",
+      "city": "New Kaitlynstad",
+      "state": "Iowa",
+      "postalCode": "15622",
+      "country": "Jersey"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "4818509561603170",
+          "name": "Jason Ford DDS",
+          "validTill": "11/25",
+          "cvv": "912",
+          "bankName": "HDFC Bank",
+          "provider": "MasterCard",
+          "emiAvailable": false,
+          "creditLimit": 162199
+        },
+        {
+          "number": "3511969581039312",
+          "name": "Amy Carter",
+          "validTill": "08/27",
+          "cvv": "831",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "RuPay",
+          "emiAvailable": false,
+          "creditLimit": 69084
+        }
+      ],
+      "debit": [
+        {
+          "number": "4606869945485",
+          "name": "Matthew Roberts",
+          "validTill": "06/31",
+          "cvv": "422",
+          "bankName": "State Bank of India",
+          "provider": "Amex"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "cdf11e31-d83c-438f-87e5-ee9f3bc9666e",
+    "billingAddress": {
+      "line1": "5687 Taylor Highway Apt. 834",
+      "line2": "Apt. 684",
+      "city": "North Jonathan",
+      "state": "Alabama",
+      "postalCode": "74678",
+      "country": "China"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "5106241623072495",
+          "name": "Joe Nelson",
+          "validTill": "10/31",
+          "cvv": "243",
+          "bankName": "Axis Bank",
+          "provider": "RuPay",
+          "emiAvailable": false,
+          "creditLimit": 93178
+        },
+        {
+          "number": "4421111886551630116",
+          "name": "Michael Johnson",
+          "validTill": "10/26",
+          "cvv": "887",
+          "bankName": "HDFC Bank",
+          "provider": "MasterCard",
+          "emiAvailable": true,
+          "creditLimit": 152678
+        }
+      ],
+      "debit": [
+        {
+          "number": "4428744150391",
+          "name": "Laurie Pugh",
+          "validTill": "05/29",
+          "cvv": "527",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "RuPay"
+        },
+        {
+          "number": "6011912660128844",
+          "name": "Cole Jennings",
+          "validTill": "03/27",
+          "cvv": "122",
+          "bankName": "State Bank of India",
+          "provider": "RuPay"
+        },
+        {
+          "number": "4365507944332497619",
+          "name": "Jessica Brown",
+          "validTill": "06/26",
+          "cvv": "459",
+          "bankName": "Yes Bank",
+          "provider": "RuPay"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "e04d8d15-b4bd-4cbf-9e53-52c6a9c7e6b0",
+    "billingAddress": {
+      "line1": "32315 Christine Vista",
+      "line2": "Apt. 146",
+      "city": "Lake Nicoleborough",
+      "state": "Virginia",
+      "postalCode": "29557",
+      "country": "Mexico"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "30097624333134",
+          "name": "James Nunez",
+          "validTill": "07/30",
+          "cvv": "998",
+          "bankName": "Axis Bank",
+          "provider": "MasterCard",
+          "emiAvailable": true,
+          "creditLimit": 281408
+        }
+      ],
+      "debit": [
+        {
+          "number": "180031756881287",
+          "name": "Stephanie Leon",
+          "validTill": "08/31",
+          "cvv": "924",
+          "bankName": "HDFC Bank",
+          "provider": "MasterCard"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "855458ff-f7ec-4232-84a3-6b496642b877",
+    "billingAddress": {
+      "line1": "65207 Byrd Brook Apt. 229",
+      "line2": "Apt. 721",
+      "city": "Walkerstad",
+      "state": "South Dakota",
+      "postalCode": "67073",
+      "country": "Macedonia"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "213153353217631",
+          "name": "Michael Shaffer",
+          "validTill": "11/34",
+          "cvv": "643",
+          "bankName": "Axis Bank",
+          "provider": "Visa",
+          "emiAvailable": false,
+          "creditLimit": 186008
+        }
+      ],
+      "debit": [
+        {
+          "number": "3580413634361536",
+          "name": "Jonathan Park",
+          "validTill": "03/33",
+          "cvv": "388",
+          "bankName": "ICICI Bank",
+          "provider": "Visa"
+        },
+        {
+          "number": "5527379986269026",
+          "name": "Vanessa Haynes",
+          "validTill": "05/30",
+          "cvv": "416",
+          "bankName": "Axis Bank",
+          "provider": "Amex"
+        },
+        {
+          "number": "4651291174729976305",
+          "name": "Sara Flores",
+          "validTill": "04/33",
+          "cvv": "766",
+          "bankName": "Axis Bank",
+          "provider": "RuPay"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "b3e46232-ec66-4c18-b853-be1376acb28f",
+    "billingAddress": {
+      "line1": "857 Lewis Points",
+      "line2": "Suite 686",
+      "city": "Jamesmouth",
+      "state": "New York",
+      "postalCode": "97255",
+      "country": "Bosnia and Herzegovina"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "4281540610688189427",
+          "name": "Kevin Moore",
+          "validTill": "07/31",
+          "cvv": "649",
+          "bankName": "Yes Bank",
+          "provider": "Amex",
+          "emiAvailable": true,
+          "creditLimit": 264614
+        },
+        {
+          "number": "3544180145708613",
+          "name": "Guy Baldwin",
+          "validTill": "07/33",
+          "cvv": "260",
+          "bankName": "HDFC Bank",
+          "provider": "Visa",
+          "emiAvailable": true,
+          "creditLimit": 42078
+        },
+        {
+          "number": "4562057560749295",
+          "name": "Michael Kennedy",
+          "validTill": "07/33",
+          "cvv": "478",
+          "bankName": "ICICI Bank",
+          "provider": "MasterCard",
+          "emiAvailable": true,
+          "creditLimit": 101018
+        }
+      ],
+      "debit": [
+        {
+          "number": "3588011576535679",
+          "name": "Shaun Noble",
+          "validTill": "10/33",
+          "cvv": "302",
+          "bankName": "State Bank of India",
+          "provider": "RuPay"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "4687c60e-c9bd-434c-986c-dc07921d8476",
+    "billingAddress": {
+      "line1": "515 Thompson Pine Apt. 955",
+      "line2": "Suite 638",
+      "city": "Michaelhaven",
+      "state": "New York",
+      "postalCode": "47023",
+      "country": "Qatar"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "2498887246091081",
+          "name": "Amber Blake",
+          "validTill": "09/32",
+          "cvv": "279",
+          "bankName": "HDFC Bank",
+          "provider": "RuPay",
+          "emiAvailable": true,
+          "creditLimit": 150823
+        },
+        {
+          "number": "4883870866683",
+          "name": "Kevin Ruiz",
+          "validTill": "12/32",
+          "cvv": "205",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "Amex",
+          "emiAvailable": false,
+          "creditLimit": 126321
+        }
+      ],
+      "debit": [
+        {
+          "number": "4877841504931089",
+          "name": "Kelly Foster",
+          "validTill": "07/34",
+          "cvv": "330",
+          "bankName": "HDFC Bank",
+          "provider": "MasterCard"
+        },
+        {
+          "number": "4990295268726991982",
+          "name": "Olivia Ward",
+          "validTill": "03/31",
+          "cvv": "888",
+          "bankName": "Axis Bank",
+          "provider": "Amex"
+        },
+        {
+          "number": "4640794716482811",
+          "name": "Jordan Walker DDS",
+          "validTill": "06/27",
+          "cvv": "210",
+          "bankName": "ICICI Bank",
+          "provider": "Amex"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "8a177a06-b685-4ee0-bc3c-948ed7cd893d",
+    "billingAddress": {
+      "line1": "5820 Hurley Ferry Suite 700",
+      "line2": "Suite 924",
+      "city": "Thomasview",
+      "state": "Montana",
+      "postalCode": "25547",
+      "country": "Sudan"
+    },
+    "paymentInfo": {
+      "credit": [
+        {
+          "number": "2224467813139414",
+          "name": "John Hall",
+          "validTill": "07/30",
+          "cvv": "676",
+          "bankName": "HDFC Bank",
+          "provider": "Visa",
+          "emiAvailable": false,
+          "creditLimit": 46176
+        }
+      ],
+      "debit": [
+        {
+          "number": "3593626378770779",
+          "name": "Jennifer Barr",
+          "validTill": "05/35",
+          "cvv": "445",
+          "bankName": "HDFC Bank",
+          "provider": "MasterCard"
+        },
+        {
+          "number": "6508420949488153",
+          "name": "Carla Daniels",
+          "validTill": "09/32",
+          "cvv": "522",
+          "bankName": "Kotak Mahindra Bank",
+          "provider": "Amex"
+        },
+        {
+          "number": "3502295158991904",
+          "name": "Jennifer Lyons",
+          "validTill": "05/34",
+          "cvv": "423",
+          "bankName": "Yes Bank",
+          "provider": "Visa"
+        }
+      ]
+    }
+  }
+]

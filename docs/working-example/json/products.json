@@ -1,0 +1,3495 @@
+[
+  {
+    "productId": "86f14e73-386d-4e79-aba9-a39311c6dfad",
+    "createdAt": "2025-04-05 02:59:43",
+    "name": "Mi Power Bank",
+    "brand": "Mi",
+    "sku": "SKU26950",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/213/224",
+      "images": [
+        "https://placekitten.com/389/104"
+      ]
+    },
+    "specifications": {
+      "capacity": "5765 mAh",
+      "voltage": "12.0V",
+      "type": "NiMH",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Italy",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 95,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "bbde65a2-8f02-414a-8f6f-ee825e367c46",
+    "createdAt": "2025-02-28 09:55:18",
+    "name": "H&M Sneakers",
+    "brand": "H&M",
+    "sku": "SKU10833",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "new-arrival",
+      "eco-friendly",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/439/870/any",
+      "images": [
+        "https://www.lorempixel.com/956/669"
+      ]
+    },
+    "specifications": {
+      "size": "L",
+      "material": "Denim",
+      "color": "Brown",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 97,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "c1f3b0aa-c05d-4038-98b4-1421ecb56f5b",
+    "createdAt": "2025-07-29 13:05:51",
+    "name": "Lenovo Air Tablet",
+    "brand": "Lenovo",
+    "sku": "SKU78608",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/16/778/any",
+      "images": [
+        "https://dummyimage.com/452x404",
+        "https://www.lorempixel.com/524/81"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "25 hours",
+      "connectivity": "Lightning",
+      "weight": "861g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 38,
+      "modelNumber": "MOD-5315"
+    }
+  },
+  {
+    "productId": "0daac303-193a-486c-8d5b-8ffee424f369",
+    "createdAt": "2025-04-27 04:53:32",
+    "name": "Asus Ultra Laptop",
+    "brand": "Asus",
+    "sku": "SKU13446",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "new-arrival",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/319/544/any",
+      "images": [
+        "https://placekitten.com/666/896",
+        "https://placekitten.com/294/252"
+      ]
+    },
+    "specifications": {
+      "color": "White",
+      "batteryLife": "19 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "300g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 74,
+      "modelNumber": "MOD-4620"
+    }
+  },
+  {
+    "productId": "91f9c744-a279-4c59-be4e-e4c5a53ac5ce",
+    "createdAt": "2025-07-16 07:20:49",
+    "name": "UrbanLadder Elegant Wall Clock",
+    "brand": "UrbanLadder",
+    "sku": "SKU53122",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/771x631",
+      "images": [
+        "https://www.lorempixel.com/746/834",
+        "https://placeimg.com/473/705/any",
+        "https://www.lorempixel.com/351/433"
+      ]
+    },
+    "specifications": {
+      "material": "Plastic",
+      "dimensions": "11x50 cm",
+      "color": "Black",
+      "weight": "2588g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 83,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "2c3f02b2-d644-4eb3-b96b-ca02c35c596a",
+    "createdAt": "2025-10-04 09:32:29",
+    "name": "Nilkamal Elegant Wall Clock",
+    "brand": "Nilkamal",
+    "sku": "SKU11430",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "lightweight",
+      "new-arrival",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/245/754/any",
+      "images": [
+        "https://placeimg.com/177/965/any"
+      ]
+    },
+    "specifications": {
+      "material": "Metal",
+      "dimensions": "48x13 cm",
+      "color": "Silver",
+      "weight": "3989g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 29,
+      "roomType": "Hallway"
+    }
+  },
+  {
+    "productId": "66c5a304-b486-45b3-be4c-ec23b3c4a684",
+    "createdAt": "2025-01-27 15:01:26",
+    "name": "Philips Elegant Vase",
+    "brand": "Philips",
+    "sku": "SKU65671",
+    "category": "Home & Decor",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "lightweight",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/977/604/any",
+      "images": [
+        "https://placekitten.com/781/120"
+      ]
+    },
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "29x46 cm",
+      "color": "Black",
+      "weight": "1297g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 30,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "54400bf7-d312-48b0-b719-55ea48a968fb",
+    "createdAt": "2025-09-03 14:05:42",
+    "name": "Asus Max Camera",
+    "brand": "Asus",
+    "sku": "SKU45748",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/975x963",
+      "images": [
+        "https://dummyimage.com/358x523"
+      ]
+    },
+    "specifications": {
+      "color": "Blue",
+      "batteryLife": "30 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "460g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 95,
+      "modelNumber": "MOD-8864"
+    }
+  },
+  {
+    "productId": "c48207f9-c636-4e4c-8c0b-d8fcf35bb024",
+    "createdAt": "2025-01-27 04:16:35",
+    "name": "Samsung Power Bank",
+    "brand": "Samsung",
+    "sku": "SKU23084",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "durable",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/185/104/any",
+      "images": [
+        "https://www.lorempixel.com/127/207",
+        "https://www.lorempixel.com/324/961"
+      ]
+    },
+    "specifications": {
+      "capacity": "1145 mAh",
+      "voltage": "10.5V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "India",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 21,
+      "shelfLife": "5 years"
+    }
+  },
+  {
+    "productId": "d68b4778-4683-4706-b88b-40da15be000b",
+    "createdAt": "2025-09-23 12:09:04",
+    "name": "Energizer Adapter",
+    "brand": "Energizer",
+    "sku": "SKU70729",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "lightweight",
+      "eco-friendly",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/787/737",
+      "images": [
+        "https://placekitten.com/109/931"
+      ]
+    },
+    "specifications": {
+      "capacity": "6699 mAh",
+      "voltage": "8.0V",
+      "type": "NiMH",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 9,
+      "shelfLife": "2 years"
+    }
+  },
+  {
+    "productId": "ff764ba0-2048-4c4b-9f9b-d237f85c581f",
+    "createdAt": "2025-02-10 13:37:41",
+    "name": "Lenovo Air Tablet",
+    "brand": "Lenovo",
+    "sku": "SKU97903",
+    "category": "Electronics",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/634/175",
+      "images": [
+        "https://dummyimage.com/578x125",
+        "https://placekitten.com/110/730",
+        "https://placekitten.com/282/83"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "30 hours",
+      "connectivity": "USB-C",
+      "weight": "872g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 17,
+      "modelNumber": "MOD-7052"
+    }
+  },
+  {
+    "productId": "0079ead2-d193-41dc-be83-3a8cb1f1fc92",
+    "createdAt": "2025-03-26 13:16:37",
+    "name": "Ambrane Adapter",
+    "brand": "Ambrane",
+    "sku": "SKU89725",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "lightweight",
+      "handmade",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/422/525",
+      "images": [
+        "https://placekitten.com/600/192"
+      ]
+    },
+    "specifications": {
+      "capacity": "8633 mAh",
+      "voltage": "2.1V",
+      "type": "Li-ion",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 27,
+      "shelfLife": "2 years"
+    }
+  },
+  {
+    "productId": "29ceb7eb-1d96-4d1e-bd22-ef37467a9755",
+    "createdAt": "2025-03-23 10:44:11",
+    "name": "Reebok Jacket",
+    "brand": "Reebok",
+    "sku": "SKU68800",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/737x636",
+      "images": [
+        "https://www.lorempixel.com/1011/527"
+      ]
+    },
+    "specifications": {
+      "size": "8",
+      "material": "Cotton",
+      "color": "White",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 99,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "cc069bd4-1cbd-4be5-977e-2e2edac65ece",
+    "createdAt": "2025-04-17 20:39:07",
+    "name": "Lenovo Ultra Smartphone",
+    "brand": "Lenovo",
+    "sku": "SKU74900",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "new-arrival",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/539/784",
+      "images": [
+        "https://www.lorempixel.com/538/586",
+        "https://placekitten.com/894/327"
+      ]
+    },
+    "specifications": {
+      "color": "Blue",
+      "batteryLife": "20 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "497g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Vietnam",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 45,
+      "modelNumber": "MOD-9479"
+    }
+  },
+  {
+    "productId": "921de6b2-dba7-46c5-9c96-f900e6f61cd5",
+    "createdAt": "2025-07-10 08:13:37",
+    "name": "Nilkamal Rustic Vase",
+    "brand": "Nilkamal",
+    "sku": "SKU95893",
+    "category": "Home & Decor",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "limited-stock",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/253/275",
+      "images": [
+        "https://dummyimage.com/340x246",
+        "https://placekitten.com/794/986",
+        "https://placekitten.com/863/117"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "32x20 cm",
+      "color": "Beige",
+      "weight": "2174g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Germany",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 71,
+      "roomType": "Living Room"
+    }
+  },
+  {
+    "productId": "d4378036-4fc1-4281-bcd7-cedca271b831",
+    "createdAt": "2025-08-02 12:12:18",
+    "name": "Levi's Sneakers",
+    "brand": "Levi's",
+    "sku": "SKU47762",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "durable",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/162x737",
+      "images": [
+        "https://placeimg.com/513/8/any"
+      ]
+    },
+    "specifications": {
+      "size": "10",
+      "material": "Cotton",
+      "color": "Red",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 69,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "8e331279-d407-48f9-abd6-ddd5c47fb580",
+    "createdAt": "2025-09-18 22:44:27",
+    "name": "UrbanLadder Modern Mirror",
+    "brand": "UrbanLadder",
+    "sku": "SKU15443",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "new-arrival",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/329/859/any",
+      "images": [
+        "https://placeimg.com/593/439/any",
+        "https://www.lorempixel.com/118/903",
+        "https://www.lorempixel.com/701/176"
+      ]
+    },
+    "specifications": {
+      "material": "Metal",
+      "dimensions": "18x38 cm",
+      "color": "White",
+      "weight": "828g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 43,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "9a8d1fef-bbfd-4f14-aa81-615b1a2af36f",
+    "createdAt": "2025-05-26 22:04:27",
+    "name": "Canon Pro Laptop",
+    "brand": "Canon",
+    "sku": "SKU82883",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "new-arrival",
+      "handmade",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/684x587",
+      "images": [
+        "https://placeimg.com/755/208/any"
+      ]
+    },
+    "specifications": {
+      "color": "White",
+      "batteryLife": "16 hours",
+      "connectivity": "Lightning",
+      "weight": "620g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 76,
+      "modelNumber": "MOD-3493"
+    }
+  },
+  {
+    "productId": "300219f7-db48-42e4-9a8c-5bbab6da6210",
+    "createdAt": "2025-04-01 11:49:06",
+    "name": "JBL Elite Smartphone",
+    "brand": "JBL",
+    "sku": "SKU69780",
+    "category": "Electronics",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "new-arrival",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/523/474/any",
+      "images": [
+        "https://dummyimage.com/575x595"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "23 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "711g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 79,
+      "modelNumber": "MOD-7791"
+    }
+  },
+  {
+    "productId": "c20ca78d-589c-4d11-bfa6-a8e3af1d644a",
+    "createdAt": "2025-03-22 08:20:55",
+    "name": "H&M Running Shoes",
+    "brand": "H&M",
+    "sku": "SKU45927",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/362/387",
+      "images": [
+        "https://placeimg.com/888/91/any",
+        "https://www.lorempixel.com/230/84"
+      ]
+    },
+    "specifications": {
+      "size": "XXL",
+      "material": "Canvas",
+      "color": "White",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 10,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "a502bc7f-cd24-45b0-a886-82d1c22f73f6",
+    "createdAt": "2025-09-21 12:56:34",
+    "name": "Nilkamal Elegant Vase",
+    "brand": "Nilkamal",
+    "sku": "SKU93303",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "lightweight",
+      "durable",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/739/356/any",
+      "images": [
+        "https://dummyimage.com/908x112",
+        "https://placeimg.com/629/873/any"
+      ]
+    },
+    "specifications": {
+      "material": "Plastic",
+      "dimensions": "42x13 cm",
+      "color": "Beige",
+      "weight": "2586g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 47,
+      "roomType": "Living Room"
+    }
+  },
+  {
+    "productId": "c197c459-4ca7-4364-a873-c7f97f660492",
+    "createdAt": "2025-10-07 00:32:33",
+    "name": "Bose Pro Tablet",
+    "brand": "Bose",
+    "sku": "SKU64051",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "durable",
+      "handmade",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/203/578",
+      "images": [
+        "https://placeimg.com/763/455/any"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "13 hours",
+      "connectivity": "USB-C",
+      "weight": "528g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 14,
+      "modelNumber": "MOD-8126"
+    }
+  },
+  {
+    "productId": "ba2a42db-a8a0-4ceb-a20f-aba3762ccde4",
+    "createdAt": "2025-01-02 08:04:55",
+    "name": "Puma Running Shoes",
+    "brand": "Puma",
+    "sku": "SKU60720",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "lightweight",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/794/212",
+      "images": [
+        "https://www.lorempixel.com/345/8",
+        "https://placeimg.com/500/551/any",
+        "https://www.lorempixel.com/394/956"
+      ]
+    },
+    "specifications": {
+      "size": "XL",
+      "material": "Leather",
+      "color": "Brown",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 63,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "7d582e4d-5f25-45a2-b67a-86a60cf2d7cb",
+    "createdAt": "2025-08-26 20:08:21",
+    "name": "Puma Casual Shirt",
+    "brand": "Puma",
+    "sku": "SKU10278",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "handmade",
+      "eco-friendly",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/303/342",
+      "images": [
+        "https://www.lorempixel.com/533/33",
+        "https://placeimg.com/602/939/any",
+        "https://www.lorempixel.com/714/154"
+      ]
+    },
+    "specifications": {
+      "size": "M",
+      "material": "Cotton",
+      "color": "Black",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Italy",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 49,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "8aaed8f0-31e6-4529-a100-8da4f6e35028",
+    "createdAt": "2025-02-25 08:06:50",
+    "name": "JBL Air Tablet",
+    "brand": "JBL",
+    "sku": "SKU63531",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "durable",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/247/325",
+      "images": [
+        "https://www.lorempixel.com/772/681",
+        "https://placekitten.com/320/182"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "17 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "515g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 47,
+      "modelNumber": "MOD-9846"
+    }
+  },
+  {
+    "productId": "a92f7118-3c4e-4b5e-931e-0339e2c1d5ee",
+    "createdAt": "2025-07-28 20:57:09",
+    "name": "Reebok Jeans",
+    "brand": "Reebok",
+    "sku": "SKU63602",
+    "category": "Apparel & Footwear",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "limited-stock",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/275x506",
+      "images": [
+        "https://dummyimage.com/501x390",
+        "https://placekitten.com/618/429"
+      ]
+    },
+    "specifications": {
+      "size": "XL",
+      "material": "Polyester",
+      "color": "Blue",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 50,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "47a8e9a8-6187-4804-bcab-7efb1c28848d",
+    "createdAt": "2025-06-12 03:58:11",
+    "name": "JBL Air Laptop",
+    "brand": "JBL",
+    "sku": "SKU59035",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "new-arrival",
+      "limited-stock",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/707/5",
+      "images": [
+        "https://placekitten.com/870/699",
+        "https://placekitten.com/857/678",
+        "https://placeimg.com/976/801/any"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "30 hours",
+      "connectivity": "USB-C",
+      "weight": "501g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 7,
+      "modelNumber": "MOD-5825"
+    }
+  },
+  {
+    "productId": "662ba993-22b1-4ac1-8709-d212709135ea",
+    "createdAt": "2025-01-31 23:59:03",
+    "name": "Energizer Adapter",
+    "brand": "Energizer",
+    "sku": "SKU88753",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "new-arrival",
+      "eco-friendly",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/23/146/any",
+      "images": [
+        "https://dummyimage.com/214x353",
+        "https://placekitten.com/972/981"
+      ]
+    },
+    "specifications": {
+      "capacity": "6962 mAh",
+      "voltage": "8.9V",
+      "type": "Li-ion",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Vietnam",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 85,
+      "shelfLife": "3 years"
+    }
+  },
+  {
+    "productId": "edb1cda3-3e53-4060-80f3-48e01c57498a",
+    "createdAt": "2025-02-07 02:21:04",
+    "name": "Sony Adapter",
+    "brand": "Sony",
+    "sku": "SKU42254",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/215x307",
+      "images": [
+        "https://www.lorempixel.com/553/946"
+      ]
+    },
+    "specifications": {
+      "capacity": "8319 mAh",
+      "voltage": "7.1V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 75,
+      "shelfLife": "3 years"
+    }
+  },
+  {
+    "productId": "9756f482-68d2-43c4-beec-5ccdb21e8d4d",
+    "createdAt": "2025-05-24 04:17:12",
+    "name": "Philips Modern Vase",
+    "brand": "Philips",
+    "sku": "SKU45125",
+    "category": "Home & Decor",
+    "subCategory": "Premium",
+    "tags": [
+      "durable",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/1016/128/any",
+      "images": [
+        "https://placekitten.com/295/927",
+        "https://www.lorempixel.com/507/470",
+        "https://placeimg.com/818/807/any"
+      ]
+    },
+    "specifications": {
+      "material": "Plastic",
+      "dimensions": "21x24 cm",
+      "color": "White",
+      "weight": "4192g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 88,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "8c1b546b-fbcf-45fe-adfa-763563b79741",
+    "createdAt": "2025-06-24 05:35:14",
+    "name": "Reebok T-Shirt",
+    "brand": "Reebok",
+    "sku": "SKU25597",
+    "category": "Apparel & Footwear",
+    "subCategory": "Budget",
+    "tags": [
+      "new-arrival",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/737x925",
+      "images": [
+        "https://placekitten.com/877/732",
+        "https://placekitten.com/663/196",
+        "https://www.lorempixel.com/726/765"
+      ]
+    },
+    "specifications": {
+      "size": "M",
+      "material": "Canvas",
+      "color": "White",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 42,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "84cf1384-f670-48eb-bf5e-ac6230288455",
+    "createdAt": "2025-05-20 15:36:18",
+    "name": "Philips Elegant Vase",
+    "brand": "Philips",
+    "sku": "SKU75823",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/699x297",
+      "images": [
+        "https://www.lorempixel.com/747/213",
+        "https://placekitten.com/630/138"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "15x17 cm",
+      "color": "Silver",
+      "weight": "940g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 80,
+      "roomType": "Living Room"
+    }
+  },
+  {
+    "productId": "1b9f4e07-b8ce-444d-85bc-fa9a5f8a85c7",
+    "createdAt": "2025-08-25 03:54:25",
+    "name": "Dell Air Laptop",
+    "brand": "Dell",
+    "sku": "SKU24227",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "eco-friendly",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/621/228",
+      "images": [
+        "https://placekitten.com/703/733",
+        "https://www.lorempixel.com/762/878"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "27 hours",
+      "connectivity": "Lightning",
+      "weight": "391g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 35,
+      "modelNumber": "MOD-1984"
+    }
+  },
+  {
+    "productId": "f7b43a15-7136-4b84-bcb1-f497b0713baa",
+    "createdAt": "2025-01-29 12:50:08",
+    "name": "Sony Max Tablet",
+    "brand": "Sony",
+    "sku": "SKU43381",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "durable",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/416/667",
+      "images": [
+        "https://www.lorempixel.com/936/1019",
+        "https://placekitten.com/937/463"
+      ]
+    },
+    "specifications": {
+      "color": "White",
+      "batteryLife": "5 hours",
+      "connectivity": "USB-C",
+      "weight": "901g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 38,
+      "modelNumber": "MOD-8937"
+    }
+  },
+  {
+    "productId": "d8213377-c374-426d-b9d4-314227824805",
+    "createdAt": "2025-03-22 05:00:45",
+    "name": "Levi's T-Shirt",
+    "brand": "Levi's",
+    "sku": "SKU11958",
+    "category": "Apparel & Footwear",
+    "subCategory": "Budget",
+    "tags": [
+      "handmade",
+      "durable",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/409/615",
+      "images": [
+        "https://placekitten.com/283/628"
+      ]
+    },
+    "specifications": {
+      "size": "S",
+      "material": "Denim",
+      "color": "White",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 81,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "ce52e3eb-8af2-4cc9-9a06-f6c0e4fe9acf",
+    "createdAt": "2025-02-06 00:22:06",
+    "name": "Energizer Adapter",
+    "brand": "Energizer",
+    "sku": "SKU34092",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "limited-stock",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/46x799",
+      "images": [
+        "https://placekitten.com/483/152"
+      ]
+    },
+    "specifications": {
+      "capacity": "7315 mAh",
+      "voltage": "2.4V",
+      "type": "NiMH",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "India",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 73,
+      "shelfLife": "2 years"
+    }
+  },
+  {
+    "productId": "070d983a-5162-48a2-9d14-30831c5451ed",
+    "createdAt": "2025-01-03 13:54:44",
+    "name": "JBL Elite Laptop",
+    "brand": "JBL",
+    "sku": "SKU19109",
+    "category": "Electronics",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/698/370",
+      "images": [
+        "https://www.lorempixel.com/856/303"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "9 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "903g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 50,
+      "modelNumber": "MOD-4900"
+    }
+  },
+  {
+    "productId": "f9f20621-a260-4812-a6e5-d83688945c76",
+    "createdAt": "2025-05-28 22:56:39",
+    "name": "HP Pro Headphones",
+    "brand": "HP",
+    "sku": "SKU92547",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/625x70",
+      "images": [
+        "https://placekitten.com/522/523",
+        "https://dummyimage.com/938x759",
+        "https://www.lorempixel.com/397/657"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "10 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "877g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 46,
+      "modelNumber": "MOD-9736"
+    }
+  },
+  {
+    "productId": "a96569c3-ce09-4807-b405-2d4fb574c645",
+    "createdAt": "2025-02-11 03:10:03",
+    "name": "Lenovo Max Smartphone",
+    "brand": "Lenovo",
+    "sku": "SKU70714",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/947/874",
+      "images": [
+        "https://placeimg.com/755/726/any",
+        "https://placeimg.com/659/596/any"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "15 hours",
+      "connectivity": "Lightning",
+      "weight": "261g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 70,
+      "modelNumber": "MOD-3968"
+    }
+  },
+  {
+    "productId": "fd9487b3-e8ad-4376-ac1a-a7160c5e01e3",
+    "createdAt": "2025-06-11 00:41:02",
+    "name": "Adidas T-Shirt",
+    "brand": "Adidas",
+    "sku": "SKU38273",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "lightweight",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/794x124",
+      "images": [
+        "https://placekitten.com/663/720"
+      ]
+    },
+    "specifications": {
+      "size": "10",
+      "material": "Polyester",
+      "color": "Brown",
+      "gender": "Unisex"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 16,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "ccd89b4a-d613-4563-8751-ff14b3fe08cd",
+    "createdAt": "2025-01-28 14:54:05",
+    "name": "Woodland Sneakers",
+    "brand": "Woodland",
+    "sku": "SKU71673",
+    "category": "Apparel & Footwear",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/695/899",
+      "images": [
+        "https://placekitten.com/710/503",
+        "https://www.lorempixel.com/111/53"
+      ]
+    },
+    "specifications": {
+      "size": "9",
+      "material": "Canvas",
+      "color": "Blue",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 87,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "691d5592-d602-4ea7-99c5-3be691ac62e3",
+    "createdAt": "2025-06-26 22:09:31",
+    "name": "Adidas Jacket",
+    "brand": "Adidas",
+    "sku": "SKU79332",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "handmade",
+      "limited-stock",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/52x383",
+      "images": [
+        "https://placeimg.com/289/629/any"
+      ]
+    },
+    "specifications": {
+      "size": "8",
+      "material": "Leather",
+      "color": "Blue",
+      "gender": "Unisex"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 14,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "55f0a554-67bf-496e-973e-419170610c89",
+    "createdAt": "2025-03-13 00:44:46",
+    "name": "Adidas Jeans",
+    "brand": "Adidas",
+    "sku": "SKU59176",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/392/970/any",
+      "images": [
+        "https://placeimg.com/837/175/any",
+        "https://dummyimage.com/772x841"
+      ]
+    },
+    "specifications": {
+      "size": "L",
+      "material": "Cotton",
+      "color": "Brown",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 35,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "1db75027-c88f-4201-ab8d-ac773b10faa6",
+    "createdAt": "2025-01-05 14:37:15",
+    "name": "H&M Casual Shirt",
+    "brand": "H&M",
+    "sku": "SKU16217",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/269x305",
+      "images": [
+        "https://www.lorempixel.com/689/573",
+        "https://placeimg.com/38/662/any"
+      ]
+    },
+    "specifications": {
+      "size": "8",
+      "material": "Canvas",
+      "color": "Green",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 26,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "49982453-1189-4a24-bedb-66e70df1420c",
+    "createdAt": "2025-08-18 02:16:12",
+    "name": "IKEA Classic Photo Frame",
+    "brand": "IKEA",
+    "sku": "SKU52703",
+    "category": "Home & Decor",
+    "subCategory": "Premium",
+    "tags": [
+      "durable",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/876/782/any",
+      "images": [
+        "https://www.lorempixel.com/740/457",
+        "https://www.lorempixel.com/940/383"
+      ]
+    },
+    "specifications": {
+      "material": "Plastic",
+      "dimensions": "22x47 cm",
+      "color": "White",
+      "weight": "1544g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 40,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "f9ff5ad7-1da0-488c-b5dd-1c49e4269951",
+    "createdAt": "2025-04-07 02:09:49",
+    "name": "Energizer Power Bank",
+    "brand": "Energizer",
+    "sku": "SKU63583",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "durable",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/298/693",
+      "images": [
+        "https://placeimg.com/553/534/any"
+      ]
+    },
+    "specifications": {
+      "capacity": "7505 mAh",
+      "voltage": "10.4V",
+      "type": "Power Bank",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 78,
+      "shelfLife": "1 years"
+    }
+  },
+  {
+    "productId": "2b172f02-e18c-49ea-a928-40f808f2dcfa",
+    "createdAt": "2025-09-30 13:12:48",
+    "name": "Lenovo Air Laptop",
+    "brand": "Lenovo",
+    "sku": "SKU13534",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "handmade",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/190/447/any",
+      "images": [
+        "https://placeimg.com/718/32/any"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "5 hours",
+      "connectivity": "Lightning",
+      "weight": "370g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 24,
+      "modelNumber": "MOD-3502"
+    }
+  },
+  {
+    "productId": "c538eb98-45ae-483d-ba95-b29939e9f89f",
+    "createdAt": "2025-02-04 12:16:55",
+    "name": "Sony Rechargeable Battery",
+    "brand": "Sony",
+    "sku": "SKU55860",
+    "category": "Batteries & Accessories",
+    "subCategory": "Budget",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/349/833",
+      "images": [
+        "https://placeimg.com/292/354/any"
+      ]
+    },
+    "specifications": {
+      "capacity": "5843 mAh",
+      "voltage": "6.3V",
+      "type": "AAA",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 74,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "70ab5808-12ba-4e24-8f89-fba6b4cb10e8",
+    "createdAt": "2025-08-16 07:07:48",
+    "name": "Sony Max Smartphone",
+    "brand": "Sony",
+    "sku": "SKU43813",
+    "category": "Electronics",
+    "subCategory": "Standard",
+    "tags": [
+      "limited-stock",
+      "handmade",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/186/313/any",
+      "images": [
+        "https://placekitten.com/106/696",
+        "https://placekitten.com/256/853"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "30 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "369g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 43,
+      "modelNumber": "MOD-4623"
+    }
+  },
+  {
+    "productId": "2fbf303f-e6c6-4b29-91f5-10e3b61952a8",
+    "createdAt": "2025-09-09 02:09:31",
+    "name": "Dell Elite Camera",
+    "brand": "Dell",
+    "sku": "SKU25875",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/403/929/any",
+      "images": [
+        "https://placekitten.com/88/704",
+        "https://dummyimage.com/636x452",
+        "https://placeimg.com/79/857/any"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "23 hours",
+      "connectivity": "USB-C",
+      "weight": "282g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 29,
+      "modelNumber": "MOD-5115"
+    }
+  },
+  {
+    "productId": "0a31a6f0-47c1-4624-b167-756866d0051a",
+    "createdAt": "2025-04-10 20:56:01",
+    "name": "Woodland Jeans",
+    "brand": "Woodland",
+    "sku": "SKU81868",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "eco-friendly",
+      "lightweight",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/526x431",
+      "images": [
+        "https://dummyimage.com/526x213",
+        "https://dummyimage.com/763x142",
+        "https://placekitten.com/332/139"
+      ]
+    },
+    "specifications": {
+      "size": "XXL",
+      "material": "Cotton",
+      "color": "Red",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 76,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "9ce5c38d-9287-405c-8d79-e30d91fc895c",
+    "createdAt": "2025-03-17 01:49:33",
+    "name": "Adidas Casual Shirt",
+    "brand": "Adidas",
+    "sku": "SKU67453",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "durable",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/848x463",
+      "images": [
+        "https://dummyimage.com/943x849"
+      ]
+    },
+    "specifications": {
+      "size": "9",
+      "material": "Leather",
+      "color": "Brown",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 54,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "9eaecd6d-882d-4004-8b42-23f3e06cc31a",
+    "createdAt": "2025-04-04 23:38:37",
+    "name": "Duracell Rechargeable Battery",
+    "brand": "Duracell",
+    "sku": "SKU82732",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "lightweight",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/562x911",
+      "images": [
+        "https://placekitten.com/92/267"
+      ]
+    },
+    "specifications": {
+      "capacity": "8497 mAh",
+      "voltage": "11.0V",
+      "type": "NiMH",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 12,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "45bbf539-ed8d-4b96-a565-3159f1c9ee45",
+    "createdAt": "2025-04-16 04:30:11",
+    "name": "Adidas Casual Shirt",
+    "brand": "Adidas",
+    "sku": "SKU80539",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "lightweight",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/868/876",
+      "images": [
+        "https://dummyimage.com/771x909"
+      ]
+    },
+    "specifications": {
+      "size": "M",
+      "material": "Polyester",
+      "color": "White",
+      "gender": "Unisex"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 21,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "fc83ed8b-f784-42b1-b3da-5f0dca257a65",
+    "createdAt": "2025-05-26 11:46:38",
+    "name": "UrbanLadder Classic Photo Frame",
+    "brand": "UrbanLadder",
+    "sku": "SKU41301",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/168/643/any",
+      "images": [
+        "https://www.lorempixel.com/491/251",
+        "https://placeimg.com/878/570/any"
+      ]
+    },
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "44x44 cm",
+      "color": "Beige",
+      "weight": "4936g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 48,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "aad5fb9d-1809-4bdd-b694-6503d6e9fe25",
+    "createdAt": "2025-09-01 15:52:24",
+    "name": "HP Air Smartphone",
+    "brand": "HP",
+    "sku": "SKU75807",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "handmade",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/131/154/any",
+      "images": [
+        "https://placekitten.com/227/160",
+        "https://www.lorempixel.com/169/659",
+        "https://dummyimage.com/603x73"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "28 hours",
+      "connectivity": "Lightning",
+      "weight": "881g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 65,
+      "modelNumber": "MOD-7506"
+    }
+  },
+  {
+    "productId": "e22b8d2d-86ce-43e0-a25e-42e2fcf41671",
+    "createdAt": "2025-06-06 07:42:50",
+    "name": "H&M Casual Shirt",
+    "brand": "H&M",
+    "sku": "SKU37761",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "new-arrival",
+      "limited-stock",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/889x424",
+      "images": [
+        "https://www.lorempixel.com/143/914"
+      ]
+    },
+    "specifications": {
+      "size": "XXL",
+      "material": "Denim",
+      "color": "Red",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 21,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "545a235a-f04d-481f-b653-3333b5cea687",
+    "createdAt": "2025-09-15 05:41:58",
+    "name": "Nilkamal Elegant Vase",
+    "brand": "Nilkamal",
+    "sku": "SKU88785",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "durable",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/620/491",
+      "images": [
+        "https://www.lorempixel.com/125/891",
+        "https://dummyimage.com/565x829"
+      ]
+    },
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "37x35 cm",
+      "color": "Silver",
+      "weight": "3877g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 46,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "5e1fd43f-7aa7-403b-b42e-0c20145da05d",
+    "createdAt": "2025-08-11 09:50:26",
+    "name": "H&M Casual Shirt",
+    "brand": "H&M",
+    "sku": "SKU79999",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/952/343",
+      "images": [
+        "https://dummyimage.com/496x1014"
+      ]
+    },
+    "specifications": {
+      "size": "L",
+      "material": "Polyester",
+      "color": "Black",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 54,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "98b65205-d0be-4513-8a82-7b55517fb79a",
+    "createdAt": "2025-04-21 18:23:22",
+    "name": "UrbanLadder Elegant Photo Frame",
+    "brand": "UrbanLadder",
+    "sku": "SKU76518",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/612x495",
+      "images": [
+        "https://dummyimage.com/352x358",
+        "https://dummyimage.com/444x936",
+        "https://placekitten.com/216/404"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "47x39 cm",
+      "color": "White",
+      "weight": "939g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "India",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 31,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "d9d9e0d1-ee13-47c0-a30b-c9594335d7c0",
+    "createdAt": "2025-03-21 19:09:17",
+    "name": "Sony Rechargeable Battery",
+    "brand": "Sony",
+    "sku": "SKU31584",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "durable",
+      "handmade",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/162/393/any",
+      "images": [
+        "https://placeimg.com/78/1024/any",
+        "https://www.lorempixel.com/292/642"
+      ]
+    },
+    "specifications": {
+      "capacity": "9630 mAh",
+      "voltage": "9.9V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 57,
+      "shelfLife": "3 years"
+    }
+  },
+  {
+    "productId": "80a87d23-bcf7-40a0-ae40-cce9320d5b98",
+    "createdAt": "2025-08-17 05:57:50",
+    "name": "Mi Power Bank",
+    "brand": "Mi",
+    "sku": "SKU24511",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "lightweight",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/942/578/any",
+      "images": [
+        "https://placeimg.com/257/801/any",
+        "https://dummyimage.com/1009x339",
+        "https://placekitten.com/565/670"
+      ]
+    },
+    "specifications": {
+      "capacity": "1786 mAh",
+      "voltage": "8.2V",
+      "type": "Power Bank",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 19,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "0b7827c9-62a6-431c-8c2d-230431f03f58",
+    "createdAt": "2025-07-07 11:00:49",
+    "name": "Ambrane Rechargeable Battery",
+    "brand": "Ambrane",
+    "sku": "SKU16710",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "durable",
+      "eco-friendly",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/1020/308",
+      "images": [
+        "https://placeimg.com/533/231/any",
+        "https://www.lorempixel.com/69/790",
+        "https://placeimg.com/530/64/any"
+      ]
+    },
+    "specifications": {
+      "capacity": "5569 mAh",
+      "voltage": "3.7V",
+      "type": "Li-ion",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Italy",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 80,
+      "shelfLife": "2 years"
+    }
+  },
+  {
+    "productId": "fa9de60b-2efd-4ae6-984a-6b18356991ae",
+    "createdAt": "2025-04-25 07:51:30",
+    "name": "Puma Running Shoes",
+    "brand": "Puma",
+    "sku": "SKU19373",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/628/775",
+      "images": [
+        "https://www.lorempixel.com/624/423",
+        "https://placekitten.com/594/160"
+      ]
+    },
+    "specifications": {
+      "size": "10",
+      "material": "Cotton",
+      "color": "Red",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Germany",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 91,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "8e98b2ff-f59e-4b21-bf7b-9ccb03346f1a",
+    "createdAt": "2025-04-03 00:15:11",
+    "name": "Sony Charging Kit",
+    "brand": "Sony",
+    "sku": "SKU38095",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "lightweight",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/599/383",
+      "images": [
+        "https://dummyimage.com/394x747",
+        "https://dummyimage.com/567x306"
+      ]
+    },
+    "specifications": {
+      "capacity": "2355 mAh",
+      "voltage": "10.5V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 18,
+      "shelfLife": "2 years"
+    }
+  },
+  {
+    "productId": "586af0b2-9e55-45cb-a422-b975aa902846",
+    "createdAt": "2025-09-10 00:58:13",
+    "name": "Apple Max Laptop",
+    "brand": "Apple",
+    "sku": "SKU24258",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "handmade",
+      "new-arrival",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/344x1022",
+      "images": [
+        "https://placekitten.com/17/487"
+      ]
+    },
+    "specifications": {
+      "color": "White",
+      "batteryLife": "5 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "420g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 12,
+      "modelNumber": "MOD-1238"
+    }
+  },
+  {
+    "productId": "f85ef4a2-7777-405b-bffb-d2cd2366eb77",
+    "createdAt": "2025-08-16 17:25:59",
+    "name": "Dell Air Tablet",
+    "brand": "Dell",
+    "sku": "SKU90376",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "durable",
+      "handmade",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/315/982/any",
+      "images": [
+        "https://placeimg.com/74/366/any"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "11 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "794g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 32,
+      "modelNumber": "MOD-6886"
+    }
+  },
+  {
+    "productId": "5b214b7b-4941-45aa-b2ee-df23c01776f3",
+    "createdAt": "2025-10-07 23:19:27",
+    "name": "Sony Power Bank",
+    "brand": "Sony",
+    "sku": "SKU28008",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "eco-friendly",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/384x224",
+      "images": [
+        "https://placekitten.com/565/219",
+        "https://www.lorempixel.com/554/738",
+        "https://www.lorempixel.com/162/143"
+      ]
+    },
+    "specifications": {
+      "capacity": "9489 mAh",
+      "voltage": "11.3V",
+      "type": "Li-ion",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 16,
+      "shelfLife": "1 years"
+    }
+  },
+  {
+    "productId": "15abd2c6-6ba5-46e2-94c5-ef6db5110e43",
+    "createdAt": "2025-09-24 00:03:44",
+    "name": "Nike Sneakers",
+    "brand": "Nike",
+    "sku": "SKU49813",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "new-arrival",
+      "lightweight",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/546/436",
+      "images": [
+        "https://www.lorempixel.com/373/547",
+        "https://www.lorempixel.com/894/230",
+        "https://placekitten.com/49/159"
+      ]
+    },
+    "specifications": {
+      "size": "M",
+      "material": "Canvas",
+      "color": "White",
+      "gender": "Men"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Italy",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 29,
+      "careInstructions": "Hand wash only"
+    }
+  },
+  {
+    "productId": "741a9db8-c4d8-47a2-91d8-0f3cfacdd505",
+    "createdAt": "2025-03-20 01:08:20",
+    "name": "Energizer Power Bank",
+    "brand": "Energizer",
+    "sku": "SKU74558",
+    "category": "Batteries & Accessories",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/1024/850",
+      "images": [
+        "https://www.lorempixel.com/97/353"
+      ]
+    },
+    "specifications": {
+      "capacity": "6569 mAh",
+      "voltage": "11.2V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 80,
+      "shelfLife": "5 years"
+    }
+  },
+  {
+    "productId": "e003320e-4456-438b-b086-776f8879e7b7",
+    "createdAt": "2025-04-28 22:44:01",
+    "name": "HomeCentre Rustic Mirror",
+    "brand": "HomeCentre",
+    "sku": "SKU28207",
+    "category": "Home & Decor",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "lightweight",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/526/141",
+      "images": [
+        "https://placekitten.com/982/1017",
+        "https://dummyimage.com/33x291",
+        "https://placeimg.com/114/440/any"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "41x30 cm",
+      "color": "Beige",
+      "weight": "4482g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 10,
+      "roomType": "Hallway"
+    }
+  },
+  {
+    "productId": "d954e2a4-c08a-4de8-a99d-0de8dd9ab8d3",
+    "createdAt": "2025-06-09 15:00:15",
+    "name": "Duracell Rechargeable Battery",
+    "brand": "Duracell",
+    "sku": "SKU69858",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "handmade",
+      "durable",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/798x172",
+      "images": [
+        "https://dummyimage.com/175x110",
+        "https://dummyimage.com/478x847",
+        "https://placekitten.com/366/949"
+      ]
+    },
+    "specifications": {
+      "capacity": "4950 mAh",
+      "voltage": "3.4V",
+      "type": "AA",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Vietnam",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 18,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "8f32731c-404c-4f63-b722-8548f17c97b0",
+    "createdAt": "2025-05-07 10:41:15",
+    "name": "Samsung Charging Kit",
+    "brand": "Samsung",
+    "sku": "SKU49611",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "durable",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/181x749",
+      "images": [
+        "https://www.lorempixel.com/662/77"
+      ]
+    },
+    "specifications": {
+      "capacity": "7705 mAh",
+      "voltage": "11.0V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 37,
+      "shelfLife": "1 years"
+    }
+  },
+  {
+    "productId": "0e5600eb-2c41-4399-b018-8a376143b756",
+    "createdAt": "2025-09-27 09:22:36",
+    "name": "HP Pro Tablet",
+    "brand": "HP",
+    "sku": "SKU51527",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "durable",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/235x373",
+      "images": [
+        "https://placekitten.com/700/717",
+        "https://dummyimage.com/925x761"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "23 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "275g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 38,
+      "modelNumber": "MOD-7783"
+    }
+  },
+  {
+    "productId": "42650459-5857-4f7d-a214-678ed313e738",
+    "createdAt": "2025-04-30 22:56:39",
+    "name": "Reebok Sneakers",
+    "brand": "Reebok",
+    "sku": "SKU58054",
+    "category": "Apparel & Footwear",
+    "subCategory": "Premium",
+    "tags": [
+      "handmade",
+      "lightweight",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/496x331",
+      "images": [
+        "https://dummyimage.com/230x128",
+        "https://www.lorempixel.com/18/361"
+      ]
+    },
+    "specifications": {
+      "size": "L",
+      "material": "Denim",
+      "color": "White",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 38,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "b6a412eb-9d6c-45a4-a17c-97ac58120df6",
+    "createdAt": "2025-01-17 02:58:09",
+    "name": "Sony Rechargeable Battery",
+    "brand": "Sony",
+    "sku": "SKU57334",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "handmade",
+      "lightweight",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/194/811",
+      "images": [
+        "https://dummyimage.com/375x197",
+        "https://www.lorempixel.com/174/552"
+      ]
+    },
+    "specifications": {
+      "capacity": "3907 mAh",
+      "voltage": "11.1V",
+      "type": "AA",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 73,
+      "shelfLife": "3 years"
+    }
+  },
+  {
+    "productId": "146373d7-f245-4419-90fa-3c178510fbbf",
+    "createdAt": "2025-06-13 17:17:20",
+    "name": "Canon Ultra Tablet",
+    "brand": "Canon",
+    "sku": "SKU89813",
+    "category": "Electronics",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "eco-friendly",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/582/780",
+      "images": [
+        "https://placekitten.com/73/405"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "29 hours",
+      "connectivity": "Bluetooth 5.0",
+      "weight": "403g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 59,
+      "modelNumber": "MOD-8092"
+    }
+  },
+  {
+    "productId": "d480af5b-d51c-449f-9df0-100e6aada330",
+    "createdAt": "2025-05-04 14:40:01",
+    "name": "Canon Elite Smartphone",
+    "brand": "Canon",
+    "sku": "SKU28747",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/155/971/any",
+      "images": [
+        "https://dummyimage.com/527x454",
+        "https://dummyimage.com/836x228"
+      ]
+    },
+    "specifications": {
+      "color": "Black",
+      "batteryLife": "16 hours",
+      "connectivity": "Lightning",
+      "weight": "917g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 28,
+      "modelNumber": "MOD-2369"
+    }
+  },
+  {
+    "productId": "c4c5295a-bdb6-4819-a981-3be8b9f0fe4a",
+    "createdAt": "2025-01-17 19:56:14",
+    "name": "UrbanLadder Modern Wall Clock",
+    "brand": "UrbanLadder",
+    "sku": "SKU49423",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "limited-stock",
+      "lightweight",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/965x990",
+      "images": [
+        "https://www.lorempixel.com/1009/336",
+        "https://www.lorempixel.com/520/498",
+        "https://placekitten.com/389/55"
+      ]
+    },
+    "specifications": {
+      "material": "Ceramic",
+      "dimensions": "35x26 cm",
+      "color": "Brown",
+      "weight": "2235g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 29,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "340d1bb5-1e6c-436e-a6b4-5e9a652d0382",
+    "createdAt": "2025-08-01 16:07:57",
+    "name": "Nike Jeans",
+    "brand": "Nike",
+    "sku": "SKU25324",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "durable",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/913/1002",
+      "images": [
+        "https://www.lorempixel.com/395/185"
+      ]
+    },
+    "specifications": {
+      "size": "8",
+      "material": "Canvas",
+      "color": "Green",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "India",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 48,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "b5c02d0a-2cbe-4333-8cc4-23be88abd20c",
+    "createdAt": "2025-01-27 08:07:23",
+    "name": "Nilkamal Modern Lamp",
+    "brand": "Nilkamal",
+    "sku": "SKU26401",
+    "category": "Home & Decor",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "new-arrival",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/565x717",
+      "images": [
+        "https://placeimg.com/782/423/any",
+        "https://placeimg.com/989/25/any"
+      ]
+    },
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "30x10 cm",
+      "color": "Silver",
+      "weight": "663g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 2,
+      "roomType": "Living Room"
+    }
+  },
+  {
+    "productId": "8ad4531e-ab94-4da6-abd4-f9350423e3fd",
+    "createdAt": "2025-05-20 05:14:57",
+    "name": "Nilkamal Modern Lamp",
+    "brand": "Nilkamal",
+    "sku": "SKU98331",
+    "category": "Home & Decor",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "durable",
+      "eco-friendly",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/763/566",
+      "images": [
+        "https://www.lorempixel.com/797/721"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "14x46 cm",
+      "color": "Brown",
+      "weight": "3268g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 100,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "d3bf9eb3-06d1-4667-ba39-577af01882cf",
+    "createdAt": "2025-05-25 00:10:31",
+    "name": "Energizer Rechargeable Battery",
+    "brand": "Energizer",
+    "sku": "SKU73747",
+    "category": "Batteries & Accessories",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "lightweight",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/981/969",
+      "images": [
+        "https://dummyimage.com/81x51"
+      ]
+    },
+    "specifications": {
+      "capacity": "9179 mAh",
+      "voltage": "3.1V",
+      "type": "NiMH",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 54,
+      "shelfLife": "5 years"
+    }
+  },
+  {
+    "productId": "b6cfcca4-1a0e-411b-a22f-3b9bf3965227",
+    "createdAt": "2025-05-14 04:08:49",
+    "name": "Duracell Adapter",
+    "brand": "Duracell",
+    "sku": "SKU31969",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "handmade",
+      "durable",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/395/685",
+      "images": [
+        "https://dummyimage.com/479x49",
+        "https://dummyimage.com/373x253",
+        "https://placekitten.com/225/436"
+      ]
+    },
+    "specifications": {
+      "capacity": "5270 mAh",
+      "voltage": "8.6V",
+      "type": "NiMH",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "India",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 37,
+      "shelfLife": "3 years"
+    }
+  },
+  {
+    "productId": "aedd1f32-8dae-4a12-919c-2b6cd5039972",
+    "createdAt": "2025-03-08 05:45:12",
+    "name": "Mi Adapter",
+    "brand": "Mi",
+    "sku": "SKU72575",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "durable",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/772/496",
+      "images": [
+        "https://dummyimage.com/720x286",
+        "https://www.lorempixel.com/622/419"
+      ]
+    },
+    "specifications": {
+      "capacity": "2022 mAh",
+      "voltage": "3.1V",
+      "type": "Power Bank",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Germany",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 61,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "f56ed863-3bfe-490c-915c-61023c74ef92",
+    "createdAt": "2025-09-01 07:54:11",
+    "name": "Sony Ultra Laptop",
+    "brand": "Sony",
+    "sku": "SKU72281",
+    "category": "Electronics",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "handmade",
+      "lightweight",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/219/947",
+      "images": [
+        "https://placeimg.com/547/972/any",
+        "https://placekitten.com/785/491"
+      ]
+    },
+    "specifications": {
+      "color": "Red",
+      "batteryLife": "28 hours",
+      "connectivity": "Lightning",
+      "weight": "575g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 73,
+      "modelNumber": "MOD-2183"
+    }
+  },
+  {
+    "productId": "e65b489e-b946-489d-a76d-cd3ffcbc6534",
+    "createdAt": "2025-02-25 16:34:52",
+    "name": "Sony Adapter",
+    "brand": "Sony",
+    "sku": "SKU34005",
+    "category": "Batteries & Accessories",
+    "subCategory": "Budget",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/923/609",
+      "images": [
+        "https://placeimg.com/731/216/any",
+        "https://www.lorempixel.com/783/419",
+        "https://www.lorempixel.com/958/107"
+      ]
+    },
+    "specifications": {
+      "capacity": "2895 mAh",
+      "voltage": "6.2V",
+      "type": "Li-ion",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "USA",
+      "returnable": true,
+      "exchangeEligible": true,
+      "popularityScore": 98,
+      "shelfLife": "4 years"
+    }
+  },
+  {
+    "productId": "f7d7dbef-c559-441c-a919-c83b0978e267",
+    "createdAt": "2025-08-20 10:24:09",
+    "name": "Puma Jeans",
+    "brand": "Puma",
+    "sku": "SKU39056",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "eco-friendly",
+      "lightweight",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/847/727/any",
+      "images": [
+        "https://placekitten.com/184/948",
+        "https://dummyimage.com/411x161",
+        "https://placeimg.com/431/375/any"
+      ]
+    },
+    "specifications": {
+      "size": "XL",
+      "material": "Canvas",
+      "color": "Blue",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 58,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "5eb20f81-94f4-4cfb-ad22-48b93b44e7ca",
+    "createdAt": "2025-09-20 01:03:29",
+    "name": "IKEA Modern Wall Clock",
+    "brand": "IKEA",
+    "sku": "SKU15473",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/403x228",
+      "images": [
+        "https://placekitten.com/134/43",
+        "https://www.lorempixel.com/727/613",
+        "https://placeimg.com/487/858/any"
+      ]
+    },
+    "specifications": {
+      "material": "Ceramic",
+      "dimensions": "26x38 cm",
+      "color": "Brown",
+      "weight": "2473g"
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 72,
+      "roomType": "Hallway"
+    }
+  },
+  {
+    "productId": "f2b785d4-10e5-49b6-949f-944955b2078f",
+    "createdAt": "2025-06-02 02:25:11",
+    "name": "UrbanLadder Modern Lamp",
+    "brand": "UrbanLadder",
+    "sku": "SKU75129",
+    "category": "Home & Decor",
+    "subCategory": "Budget",
+    "tags": [
+      "eco-friendly",
+      "handmade",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/894/750",
+      "images": [
+        "https://www.lorempixel.com/363/644",
+        "https://placeimg.com/638/131/any"
+      ]
+    },
+    "specifications": {
+      "material": "Metal",
+      "dimensions": "46x43 cm",
+      "color": "Beige",
+      "weight": "3116g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 78,
+      "roomType": "Hallway"
+    }
+  },
+  {
+    "productId": "43da7e47-ab8b-4d51-a95b-e4aa6081ef98",
+    "createdAt": "2025-01-25 01:04:45",
+    "name": "Bose Pro Headphones",
+    "brand": "Bose",
+    "sku": "SKU65085",
+    "category": "Electronics",
+    "subCategory": "Budget",
+    "tags": [
+      "durable",
+      "new-arrival",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placeimg.com/67/265/any",
+      "images": [
+        "https://placekitten.com/478/696",
+        "https://dummyimage.com/317x406",
+        "https://www.lorempixel.com/648/307"
+      ]
+    },
+    "specifications": {
+      "color": "White",
+      "batteryLife": "24 hours",
+      "connectivity": "Lightning",
+      "weight": "641g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Malaysia",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 88,
+      "modelNumber": "MOD-4085"
+    }
+  },
+  {
+    "productId": "ee94a299-562d-429c-9c58-2c413a9d6d4e",
+    "createdAt": "2025-02-07 16:38:51",
+    "name": "Samsung Power Bank",
+    "brand": "Samsung",
+    "sku": "SKU78692",
+    "category": "Batteries & Accessories",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "new-arrival",
+      "eco-friendly",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/527/631",
+      "images": [
+        "https://placekitten.com/481/794",
+        "https://placeimg.com/334/487/any"
+      ]
+    },
+    "specifications": {
+      "capacity": "4734 mAh",
+      "voltage": "2.3V",
+      "type": "AA",
+      "rechargeable": false
+    },
+    "additionalInfo": {
+      "warranty": "No Warranty",
+      "originCountry": "China",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 74,
+      "shelfLife": "5 years"
+    }
+  },
+  {
+    "productId": "0026f05e-72ab-44d5-bebd-8194ec08f77f",
+    "createdAt": "2025-06-30 05:31:50",
+    "name": "Adidas Running Shoes",
+    "brand": "Adidas",
+    "sku": "SKU45728",
+    "category": "Apparel & Footwear",
+    "subCategory": "Limited Edition",
+    "tags": [
+      "limited-stock",
+      "handmade",
+      "lightweight"
+    ],
+    "media": {
+      "thumbnail": "https://dummyimage.com/731x923",
+      "images": [
+        "https://dummyimage.com/304x18",
+        "https://dummyimage.com/157x803",
+        "https://www.lorempixel.com/381/1013"
+      ]
+    },
+    "specifications": {
+      "size": "7",
+      "material": "Cotton",
+      "color": "Blue",
+      "gender": "Unisex"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "China",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 14,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "15d1d487-e2f2-46a1-a065-cfb7d81184bc",
+    "createdAt": "2025-02-16 23:16:02",
+    "name": "Reebok Jeans",
+    "brand": "Reebok",
+    "sku": "SKU80754",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "handmade",
+      "limited-stock",
+      "new-arrival"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/73/847",
+      "images": [
+        "https://www.lorempixel.com/431/615",
+        "https://dummyimage.com/761x517"
+      ]
+    },
+    "specifications": {
+      "size": "XXL",
+      "material": "Leather",
+      "color": "Blue",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Malaysia",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 47,
+      "careInstructions": "Machine wash"
+    }
+  },
+  {
+    "productId": "ed8e1c64-234b-4177-98b3-2d70d778ce5f",
+    "createdAt": "2025-08-03 20:29:32",
+    "name": "Woodland Sneakers",
+    "brand": "Woodland",
+    "sku": "SKU18022",
+    "category": "Apparel & Footwear",
+    "subCategory": "Standard",
+    "tags": [
+      "durable",
+      "limited-stock",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/292/79",
+      "images": [
+        "https://placeimg.com/616/880/any",
+        "https://dummyimage.com/963x284",
+        "https://dummyimage.com/836x764"
+      ]
+    },
+    "specifications": {
+      "size": "XXL",
+      "material": "Polyester",
+      "color": "Red",
+      "gender": "Women"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "India",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 25,
+      "careInstructions": "Dry clean only"
+    }
+  },
+  {
+    "productId": "0fb3bf18-6db7-47e4-b666-5acdbe6fafcb",
+    "createdAt": "2025-10-06 07:22:34",
+    "name": "UrbanLadder Rustic Lamp",
+    "brand": "UrbanLadder",
+    "sku": "SKU35852",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "new-arrival",
+      "lightweight",
+      "limited-stock"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/394/370",
+      "images": [
+        "https://placeimg.com/245/204/any"
+      ]
+    },
+    "specifications": {
+      "material": "Glass",
+      "dimensions": "48x46 cm",
+      "color": "Brown",
+      "weight": "2487g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 56,
+      "roomType": "Bedroom"
+    }
+  },
+  {
+    "productId": "501ddd4b-b49d-4b8a-bd28-c8064fb45a27",
+    "createdAt": "2025-06-04 23:34:24",
+    "name": "Canon Air Camera",
+    "brand": "Canon",
+    "sku": "SKU26964",
+    "category": "Electronics",
+    "subCategory": "Standard",
+    "tags": [
+      "lightweight",
+      "limited-stock",
+      "eco-friendly"
+    ],
+    "media": {
+      "thumbnail": "https://www.lorempixel.com/805/364",
+      "images": [
+        "https://dummyimage.com/362x35"
+      ]
+    },
+    "specifications": {
+      "color": "Silver",
+      "batteryLife": "15 hours",
+      "connectivity": "Wi-Fi",
+      "weight": "228g"
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "USA",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 60,
+      "modelNumber": "MOD-5746"
+    }
+  },
+  {
+    "productId": "7bd72213-db09-4b1e-bd86-0807e2e35b81",
+    "createdAt": "2025-05-26 19:48:58",
+    "name": "IKEA Rustic Lamp",
+    "brand": "IKEA",
+    "sku": "SKU33797",
+    "category": "Home & Decor",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "eco-friendly",
+      "handmade"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/116/17",
+      "images": [
+        "https://placekitten.com/738/867",
+        "https://dummyimage.com/697x767",
+        "https://placeimg.com/315/181/any"
+      ]
+    },
+    "specifications": {
+      "material": "Ceramic",
+      "dimensions": "41x40 cm",
+      "color": "Silver",
+      "weight": "897g"
+    },
+    "additionalInfo": {
+      "warranty": "1 Year",
+      "originCountry": "Italy",
+      "returnable": false,
+      "exchangeEligible": false,
+      "popularityScore": 85,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "3a9ee4e8-e116-4ded-ab60-6e69cc109d8e",
+    "createdAt": "2025-09-13 23:57:06",
+    "name": "Godrej Elegant Vase",
+    "brand": "Godrej",
+    "sku": "SKU10227",
+    "category": "Home & Decor",
+    "subCategory": "Standard",
+    "tags": [
+      "new-arrival",
+      "eco-friendly",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/740/855",
+      "images": [
+        "https://www.lorempixel.com/1005/741",
+        "https://www.lorempixel.com/474/15",
+        "https://placeimg.com/672/91/any"
+      ]
+    },
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "45x13 cm",
+      "color": "White",
+      "weight": "3452g"
+    },
+    "additionalInfo": {
+      "warranty": "6 Months",
+      "originCountry": "Germany",
+      "returnable": false,
+      "exchangeEligible": true,
+      "popularityScore": 70,
+      "roomType": "Office"
+    }
+  },
+  {
+    "productId": "05423024-935c-4ab2-8575-84228b654da0",
+    "createdAt": "2025-07-19 21:08:45",
+    "name": "Mi Power Bank",
+    "brand": "Mi",
+    "sku": "SKU99734",
+    "category": "Batteries & Accessories",
+    "subCategory": "Premium",
+    "tags": [
+      "limited-stock",
+      "lightweight",
+      "durable"
+    ],
+    "media": {
+      "thumbnail": "https://placekitten.com/481/774",
+      "images": [
+        "https://dummyimage.com/892x69"
+      ]
+    },
+    "specifications": {
+      "capacity": "4627 mAh",
+      "voltage": "1.6V",
+      "type": "Li-ion",
+      "rechargeable": true
+    },
+    "additionalInfo": {
+      "warranty": "2 Years",
+      "originCountry": "Vietnam",
+      "returnable": true,
+      "exchangeEligible": false,
+      "popularityScore": 96,
+      "shelfLife": "5 years"
+    }
+  }
+]

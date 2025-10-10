@@ -34,6 +34,14 @@ Lets assume a simple scenario of view cart or wishlist and should be able to sha
     - mongo : To save the final cart details so it can be shared with others {we can even use cache to do this as this will be a short lived object but just to use mongo we are saving it in mongo}
     - Postgres : To get the offer Details from DB 
 
+# Prerequisites  
+in order to Replicate and use Services and Components we will be using mockApis and Scripts to add use [https://mockapi.io/](https://mockapi.io/) to create mocks for cart and other services below are the data that you could download and use for mock 
+
+- Product : [Download products mock data](./working-example/json/products.json)
+- Payments : [Download payments mock data](./working-example/json/payments.json)
+- Stocks & Offers : [Download stocks & offers mock data ](./working-example/json/stocks-offers.json)
+- Cart : [Download Cart mock Data](./working-example/json/cart.json)
+- Offers Scripts : [Download offers DB Script](./working-example/scripts/offers.sql)
 
 ## Code
 
