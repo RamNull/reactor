@@ -1,4 +1,7 @@
 # Workflow: Deploy Jekyll site from /docs
+# This workflow builds and deploys all markdown files in /docs including:
+# - index.md -> https://ramnull.github.io/reactor/
+# - working-example.md -> https://ramnull.github.io/reactor/example
 name: Deploy Jekyll from /docs
 
 on:
