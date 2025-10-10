@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Reactor Example
+description: A Comprehensive example on how to use Reactor
 permalink: /example
 ---
 
