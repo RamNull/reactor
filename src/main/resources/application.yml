@@ -1,0 +1,22 @@
+spring:
+  # ---------- PostgreSQL (non-reactive) ----------
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopping
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  # ---------- Reactive MongoDB ----------
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: shopping

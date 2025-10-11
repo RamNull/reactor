@@ -307,15 +307,23 @@ In the Restaurants analogy
 
 
         - ### i. Hot Publish 
-            Hot publish emits data independent of subscribers. Subscribers may miss events if they don't subscribe from the beginning 
+            Hot publish emits data independent of subscribers. Subscribers may miss events if they don't subscribe from the beginning.
 
-            its more like streaming live match you will see from when you started from watching but not form start 
+            its more like streaming live match you will see from when you started from watching but not form start but there are  variations like `autoConnect()` that require at-least one subscriber to start the stream others like `connect()` starts without subscriber and there are some like   `refCount(10)` in which case starts only when there are 10 subscribers
 
             ```java
 
             Flux<Long> hotFlux = Flux.interval(Duration.ofMillis(500)) // emits every 500ms
                                   .publish()  // converts to ConnectableFlux (hot)
-                                  .autoConnect(); // starts emitting immediately
+                                  .autoConnect(); // starts emitting immediately when the first subscriber subscribers 
+
+            Flux<Long> hotFlux = Flux.interval(Duration.ofMillis(500)) // emits every 500ms
+                                  .publish()  // converts to ConnectableFlux (hot)
+                                  .connect(); //  starts emitting immediately, regardless of subscribers
+            
+            Flux<Long> hotFlux = Flux.interval(Duration.ofMillis(500)) // emits every 500ms
+                                  .publish()  // converts to ConnectableFlux (hot)
+                                  .refCount(10); //  starts emitting immediately, where there are 10 subscribers
 
             ```
 
