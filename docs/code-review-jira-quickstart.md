@@ -14,9 +14,10 @@ PROJ-123 - Your PR title here
 
 ### What Happens Automatically
 
-1. ✅ PR opened → Code review requested
-2. ✅ Jira issue updated to "In Review"
-3. ✅ PR approved → Jira updated to "Reviewed"
+1. ✅ **PR opened** → Code review requested, Jira → "In Review"
+2. ✅ **PR approved** → Jira → "Reviewed"
+3. ✅ **PR merged** → Jira → "Done"
+4. ✅ **PR closed** (without merge) → Jira → "Closed"
 
 ### No Jira Issue?
 

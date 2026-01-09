@@ -9,13 +9,16 @@ This workflow automatically:
 2. **Extracts Jira issue ID** from PR title or description
 3. **Updates Jira status** to "In Review" when PR is created
 4. **Updates Jira status** to "Reviewed" when PR is approved
-5. **Skips Jira updates** if no issue ID is found
+5. **Updates Jira status** to "Done" when PR is merged
+6. **Updates Jira status** to "Closed" when PR is closed without merge
+7. **Skips Jira updates** if no issue ID is found
 
 ## Features
 
 - ✅ Automatic code review request on PR creation
 - ✅ Intelligent Jira issue ID extraction
-- ✅ Bidirectional workflow (PR → Jira)
+- ✅ Complete workflow lifecycle (PR → Jira at every stage)
+- ✅ Handles PR merge and closure events
 - ✅ Graceful handling of missing Jira configuration
 - ✅ Support for multiple issue ID formats
 - ✅ Detailed logging and error messages
@@ -59,12 +62,18 @@ You can customize the Jira status names using repository variables:
 |---------------|-------------|---------------|
 | `JIRA_REVIEW_STATUS` | Status to set when PR is opened | `In Review` |
 | `JIRA_REVIEWED_STATUS` | Status to set when PR is approved | `Reviewed` |
+| `JIRA_DONE_STATUS` | Status to set when PR is merged | `Done` |
+| `JIRA_CLOSED_STATUS` | Status to set when PR is closed without merge | `Closed` |
 
 ### Step 4: Verify Jira Workflow
 
 Ensure your Jira project has the following transitions available:
 
 1. A transition to **"In Review"** status (or your custom status name)
+2. A transition to **"Reviewed"** status (or your custom status name)
+3. A transition to **"Done"** status (or your custom status name)
+4. A transition to **"Closed"** status (or your custom status name)
+
 2. A transition to **"Reviewed"** status (or your custom status name)
 
 The script will automatically find the correct transition ID based on the status name.
@@ -121,6 +130,22 @@ If your PR doesn't have a Jira issue ID, the workflow will:
 2. **Extracts issue ID** from title/description
 3. **Updates Jira** (if issue ID found) to "Reviewed"
 4. **Posts comment** on PR confirming Jira update
+
+### When a PR is Merged
+
+1. **Workflow triggers** on `pull_request` closed event (with merged=true)
+2. **Extracts issue ID** from title/description
+3. **Updates Jira** (if issue ID found) to "Done"
+4. **Adds comment** to Jira indicating PR was merged
+5. **Posts comment** on PR confirming completion
+
+### When a PR is Closed Without Merge
+
+1. **Workflow triggers** on `pull_request` closed event (with merged=false)
+2. **Extracts issue ID** from title/description
+3. **Updates Jira** (if issue ID found) to "Closed"
+4. **Adds comment** to Jira indicating PR was closed
+5. **Posts comment** on PR confirming closure
 
 ## Troubleshooting
 

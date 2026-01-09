@@ -76,8 +76,20 @@ echo "Found transition ID: $TRANSITION_ID"
 
 # Prepare comment text
 COMMENT_TEXT="Code review initiated via GitHub PR"
+COMPLETION_TYPE="${COMPLETION_TYPE:-}"
+
 if [ -n "$PR_NUMBER" ] && [ -n "$PR_URL" ]; then
-    COMMENT_TEXT="Code review for PR #${PR_NUMBER} has been initiated. View PR: ${PR_URL}"
+    case "$COMPLETION_TYPE" in
+        "merged")
+            COMMENT_TEXT="PR #${PR_NUMBER} has been merged. Issue marked as complete. View PR: ${PR_URL}"
+            ;;
+        "closed")
+            COMMENT_TEXT="PR #${PR_NUMBER} has been closed without merge. View PR: ${PR_URL}"
+            ;;
+        *)
+            COMMENT_TEXT="Code review for PR #${PR_NUMBER} has been initiated. View PR: ${PR_URL}"
+            ;;
+    esac
 fi
 
 # Perform the transition

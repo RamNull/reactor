@@ -67,6 +67,34 @@ The Jira status name to transition to when a PR is approved.
 
 **Important**: Must match exactly the status name in your Jira workflow (case-sensitive).
 
+### JIRA_DONE_STATUS
+The Jira status name to transition to when a PR is merged (completed).
+
+**Default**: `Done`
+
+**Other common values**:
+- `Completed`
+- `Resolved`
+- `Finished`
+- `Deployed`
+- `Closed`
+
+**Important**: Must match exactly the status name in your Jira workflow (case-sensitive).
+
+### JIRA_CLOSED_STATUS
+The Jira status name to transition to when a PR is closed without merge.
+
+**Default**: `Closed`
+
+**Other common values**:
+- `Cancelled`
+- `Rejected`
+- `Won't Do`
+- `Abandoned`
+- `Declined`
+
+**Important**: Must match exactly the status name in your Jira workflow (case-sensitive).
+
 ## Verification Checklist
 
 Before using the workflow, verify:
@@ -75,8 +103,8 @@ Before using the workflow, verify:
 - [ ] JIRA_URL does not have a trailing slash
 - [ ] JIRA_USER is correct (email for Cloud, username for Server)
 - [ ] JIRA_API_TOKEN is valid and not expired
-- [ ] Status names match your Jira workflow exactly
-- [ ] Your Jira user has permission to transition issues
+- [ ] Status names match your Jira workflow exactly (all four: In Review, Reviewed, Done, Closed)
+- [ ] Your Jira user has permission to transition issues to all required statuses
 - [ ] Your Jira user has permission to add comments
 
 ## Testing Configuration
@@ -125,38 +153,44 @@ cat /tmp/output.txt
 ### Standard Agile Workflow
 ```
 To Do → In Progress → In Review → Reviewed → Done
-        ^                ^           ^
-        |                |           |
-    PR Created      PR Opened   PR Approved
+        ^                ^           ^         ^
+        |                |           |         |
+    PR Created      PR Opened   PR Approved  PR Merged
 ```
 
 **Variables**:
 - `JIRA_REVIEW_STATUS=In Review`
 - `JIRA_REVIEWED_STATUS=Reviewed`
+- `JIRA_DONE_STATUS=Done`
+- `JIRA_CLOSED_STATUS=Closed`
 
 ### Kanban Workflow
 ```
 Backlog → In Development → Code Review → Done
-                              ^
-                              |
-                         PR Opened/Approved
+                              ^          ^
+                              |          |
+                         PR Opened   PR Merged
 ```
 
 **Variables**:
 - `JIRA_REVIEW_STATUS=Code Review`
-- `JIRA_REVIEWED_STATUS=Done`
+- `JIRA_REVIEWED_STATUS=Code Review`
+- `JIRA_DONE_STATUS=Done`
+- `JIRA_CLOSED_STATUS=Backlog`
 
 ### Custom Workflow
 ```
-New → Development → Peer Review → Testing → Closed
-                        ^             ^
-                        |             |
-                   PR Opened     PR Approved
+New → Development → Peer Review → Testing → Deployed
+                        ^            ^         ^
+                        |            |         |
+                   PR Opened    PR Approved  PR Merged
 ```
 
 **Variables**:
 - `JIRA_REVIEW_STATUS=Peer Review`
 - `JIRA_REVIEWED_STATUS=Testing`
+- `JIRA_DONE_STATUS=Deployed`
+- `JIRA_CLOSED_STATUS=Cancelled`
 
 ## Security Best Practices
 
