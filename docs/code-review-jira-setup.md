@@ -74,8 +74,6 @@ Ensure your Jira project has the following transitions available:
 3. A transition to **"Done"** status (or your custom status name)
 4. A transition to **"Closed"** status (or your custom status name)
 
-2. A transition to **"Reviewed"** status (or your custom status name)
-
 The script will automatically find the correct transition ID based on the status name.
 
 ## Usage
